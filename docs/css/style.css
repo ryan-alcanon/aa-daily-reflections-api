@@ -1,0 +1,35 @@
+.lang-toggle-bar {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.75rem 1.25rem;
+}
+
+#lang-toggle {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.lang-btn {
+  padding: 0.25rem 0.65rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: transparent;
+  color: #555;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.lang-btn:hover {
+  background: #f0f0f0;
+  border-color: #999;
+  color: #222;
+}
+
+.lang-btn.active {
+  background: #222;
+  border-color: #222;
+  color: #fff;
+}
