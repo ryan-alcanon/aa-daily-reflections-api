@@ -163,15 +163,14 @@
         </div>
       </nav>
     </header>
-    <main class="px-3">
+    <div class="date-nav-bar">
       <input type="date" id="date-picker" aria-hidden="true" style="opacity:0;position:absolute;width:0;height:0;">
-      <ul class="nav justify-content-center">
+      <ul class="nav nav-date justify-content-center mb-0">
         <li class="nav-item">
           <a id="prev-link" class="nav-link" href="#"><i class="bi bi-arrow-left-square"></i></a>
         </li>
         <li class="nav-item">
           <a id="date-picker-link" class="nav-link" href="#"><i class="bi bi-calendar3"></i></a>
-          <!-- <input id="date-picker" class="nav-link" type="date" style="border: none; background: none; color: inherit; text-decoration: none; cursor: pointer;"> -->
         </li>
         <li class="nav-item">
           <a id="random-link" class="nav-link" href="#"><i class="bi bi-dice-5"></i></a>
@@ -180,13 +179,15 @@
           <a id="next-link" class="nav-link" href="#"><i class="bi bi-arrow-right-square"></i></a>
         </li>
       </ul>
-      
+    </div>
+
+    <main class="px-3">
       <article>
       <h1 id="title" class="display-3"></h1>
       <h3 class="display-6"><span id="monthName"></span> <span id="day"></span></h3>
       <figure class="text-center">
         <blockquote class="blockquote">
-          <p><em><span id="quote"></span></p>
+          <p><span id="quote"></span></p>
         </blockquote>
         <figcaption class="blockquote-footer">
           Referenced from <cite id="reference" title="Reference From"></cite>

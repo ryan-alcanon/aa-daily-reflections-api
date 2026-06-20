@@ -51,6 +51,30 @@ body {
 
 
 /*
+ * Date navigation
+ */
+
+.date-nav-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bs-dark-bg-subtle, #343a40);
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+  margin: 0 -1rem;
+  padding: 0 1rem;
+}
+
+.nav-date .nav-link {
+  color: rgba(255, 255, 255, .5);
+}
+
+.nav-date .nav-link:hover,
+.nav-date .nav-link:focus {
+  color: #fff;
+}
+
+
+/*
  * Language toggle
  */
 
