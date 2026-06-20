@@ -6,6 +6,8 @@ const LANGUAGES = [
 
 let currentLang = localStorage.getItem('aa-lang') || 'en';
 let currentDate = new Date();
+let firstLoad = true;
+let pendingAnimEnd = null;
 
 document.addEventListener('DOMContentLoaded', function () {
   // Language toggle
@@ -106,15 +108,56 @@ function loadReflection() {
       const entry = reflections.find(function (r) {
         return r.month === month && r.day === day;
       });
-
       if (!entry) throw new Error('No reflection found for ' + month + '/' + day);
 
-      ['title', 'monthName', 'day', 'quote', 'reference', 'reflection', 'copyright'].forEach(function (field) {
-        const el = document.getElementById(field);
-        if (el) el.textContent = entry[field];
-      });
+      if (firstLoad) {
+        firstLoad = false;
+        updateContent(entry);
+        fadeArticleIn('animate__fadeInDown');
+      } else {
+        fadeArticleOut(function () {
+          updateContent(entry);
+          fadeArticleIn('animate__fadeIn');
+        });
+      }
     })
     .catch(function (err) {
       console.error('Error loading reflection:', err.message);
     });
+}
+
+function updateContent(entry) {
+  ['title', 'monthName', 'day', 'quote', 'reference', 'reflection', 'copyright'].forEach(function (field) {
+    const el = document.getElementById(field);
+    if (el) el.textContent = entry[field];
+  });
+}
+
+function fadeArticleOut(callback) {
+  const article = document.querySelector('article');
+
+  // Cancel any in-progress animation before starting a new one
+  if (pendingAnimEnd) {
+    article.removeEventListener('animationend', pendingAnimEnd);
+    pendingAnimEnd = null;
+  }
+
+  article.classList.remove('animate__fadeIn', 'animate__fadeInDown');
+  void article.offsetWidth; // force reflow so the new animation starts clean
+  article.classList.add('animate__fadeOut');
+
+  pendingAnimEnd = function () {
+    article.removeEventListener('animationend', pendingAnimEnd);
+    pendingAnimEnd = null;
+    article.classList.remove('animate__fadeOut');
+    callback();
+  };
+  article.addEventListener('animationend', pendingAnimEnd);
+}
+
+function fadeArticleIn(animClass) {
+  const article = document.querySelector('article');
+  article.classList.remove('animate__fadeOut');
+  void article.offsetWidth; // force reflow so animation restarts if same class
+  article.classList.add(animClass);
 }

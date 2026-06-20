@@ -50,6 +50,20 @@ body {
 
 
 /*
+ * Animations
+ */
+
+article {
+  opacity: 0;
+  --animate-duration: 0.5s;
+}
+
+article.animate__fadeOut {
+  --animate-duration: 0.2s;
+}
+
+
+/*
  * Date navigation
  */
 
@@ -62,8 +76,8 @@ body {
 
 .nav-date .nav-link {
     color: var(--bs-secondary-color);
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .nav-date .nav-link:hover,
