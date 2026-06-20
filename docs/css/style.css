@@ -33,3 +33,39 @@
   border-color: #222;
   color: #fff;
 }
+
+/* Day navigation */
+.day-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 1.25rem 1.5rem;
+}
+
+.nav-btn {
+  padding: 0.3rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: transparent;
+  color: #555;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+}
+
+.nav-btn:hover {
+  background: #f0f0f0;
+  border-color: #999;
+  color: #222;
+}
+
+#date-picker {
+  padding: 0.3rem 0.5rem;
+  font-size: 0.85rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #555;
+  cursor: pointer;
+}
