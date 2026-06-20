@@ -117,3 +117,12 @@ li.date-nav-item i.bi {
   vertical-align: 0;
   padding-left: 0.25rem;
 }
+
+/* Content */
+article .content {
+  margin-top: 1rem;
+}
+
+figcaption.blockquote-footer {
+  padding-top: 0.5rem;
+}
