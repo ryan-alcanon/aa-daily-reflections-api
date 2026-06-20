@@ -1,93 +1,13 @@
-.lang-toggle-bar {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0.75rem 1.25rem;
-}
-
-#lang-toggle {
-  display: flex;
-  gap: 0.25rem;
-}
-
-.lang-btn {
-  padding: 0.25rem 0.65rem;
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: transparent;
-  color: #555;
-  cursor: pointer;
-  transition: background 0.15s, color 0.15s, border-color 0.15s;
-}
-
-.lang-btn:hover {
-  background: #f0f0f0;
-  border-color: #999;
-  color: #222;
-}
-
-.lang-btn.active {
-  background: #222;
-  border-color: #222;
-  color: #fff;
-}
-
-/* Day navigation */
-.day-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
-  padding: 1rem 1.25rem 1.5rem;
-}
-
-.nav-btn {
-  padding: 0.3rem 0.9rem;
-  font-size: 0.85rem;
-  font-weight: 600;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  background: transparent;
-  color: #555;
-  cursor: pointer;
-  transition: background 0.15s, color 0.15s, border-color 0.15s;
-}
-
-.nav-btn:hover {
-  background: #f0f0f0;
-  border-color: #999;
-  color: #222;
-}
-
-#date-picker {
-  padding: 0.3rem 0.5rem;
-  font-size: 0.85rem;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  color: #555;
-  cursor: pointer;
-}
 /*
  * Globals
  */
 
-/* Links */
-a,
-a:focus,
-a:hover {
-  color: #fff;
-}
-
 /* Custom default button */
-.btn-secondary,
-.btn-secondary:hover,
-.btn-secondary:focus {
+.btn-light,
+.btn-light:hover,
+.btn-light:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: .05rem solid #fff;
+  text-shadow: none;
 }
 
 
@@ -95,20 +15,7 @@ a:hover {
  * Base structure
  */
 
-html,
 body {
-  height: 100%;
-  background-color: #333;
-}
-
-body {
-  display: -ms-flexbox;
-  display: -webkit-box;
-  display: flex;
-  -ms-flex-pack: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  color: #fff;
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
 }
@@ -121,25 +28,15 @@ body {
 /*
  * Header
  */
-.masthead {
-  margin-bottom: 2rem;
-}
-
-.masthead-brand {
-  margin-bottom: 0;
-}
 
 .nav-masthead .nav-link {
-  padding: .25rem 0;
-  font-weight: 700;
-  color: rgba(255, 255, 255, .5);
-  background-color: transparent;
+  color: var(--bs-secondary-color);
   border-bottom: .25rem solid transparent;
 }
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
-  border-bottom-color: rgba(255, 255, 255, .25);
+  border-bottom-color: var(--bs-secondary-color);
 }
 
 .nav-masthead .nav-link + .nav-link {
@@ -147,35 +44,99 @@ body {
 }
 
 .nav-masthead .active {
-  color: #fff;
-  border-bottom-color: #fff;
-}
-
-@media (min-width: 48em) {
-  .masthead-brand {
-    float: left;
-  }
-  .nav-masthead {
-    float: right;
-  }
+  color: var(--bs-emphasis-color);
+  border-bottom-color: var(--bs-emphasis-color);
 }
 
 
 /*
- * Cover
+ * Animations
  */
-.cover {
-  padding: 0 1.5rem;
+
+article {
+  opacity: 0;
+  --animate-duration: 0.5s;
 }
-.cover .btn-lg {
-  padding: .75rem 1.25rem;
+
+article.animate__fadeOut {
+  --animate-duration: 0.2s;
+}
+
+
+/*
+ * Date navigation
+ */
+
+.date-nav-bar {
+  background-color: var(--bs-tertiary-bg);
+  border-bottom: 1px solid var(--bs-border-color);
+  margin: 0 -1rem 1rem -1rem;
+  padding: 0 1rem;
+}
+
+.nav-date .nav-link {
+    color: var(--bs-secondary-color);
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.nav-date .nav-link:hover,
+.nav-date .nav-link:focus {
+  color: var(--bs-emphasis-color);
+}
+
+
+/*
+ * Language toggle
+ */
+
+#lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  border-bottom: .25rem solid transparent;
+  padding: .25rem 0;
   font-weight: 700;
+  font-size: .875rem;
+  color: var(--bs-secondary-color);
+  cursor: pointer;
+  transition: color .15s, border-color .15s;
 }
 
+.lang-btn:hover,
+.lang-btn:focus {
+  color: var(--bs-body-color);
+  border-bottom-color: var(--bs-secondary-color);
+}
+
+.lang-btn.active {
+  color: var(--bs-emphasis-color);
+  border-bottom-color: var(--bs-emphasis-color);
+}
 
 /*
- * Footer
- */
-.mastfoot {
-  color: rgba(255, 255, 255, .5);
+  * Footer
+  */
+li.date-nav-item {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+li.date-nav-item i.bi {
+  vertical-align: 0;
+  padding-left: 0.25rem;
+}
+
+/* Content */
+article .content {
+  margin-top: 1rem;
+}
+
+figcaption.blockquote-footer {
+  padding-top: 0.5rem;
 }
