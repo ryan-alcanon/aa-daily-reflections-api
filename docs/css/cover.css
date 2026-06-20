@@ -102,3 +102,16 @@ body {
   color: var(--bs-emphasis-color);
   border-bottom-color: var(--bs-emphasis-color);
 }
+
+/*
+  * Footer
+  */
+li.date-nav-item {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+li.date-nav-item i.bi {
+  vertical-align: 0;
+  padding-left: 0.25rem;
+}
