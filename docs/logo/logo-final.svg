@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg14"
+   sodipodi:docname="logo-final.svg"
+   inkscape:version="1.4.4 (dcaf3e7, 2026-05-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview14"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.6113281"
+     inkscape:cx="255.6897"
+     inkscape:cy="256"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg14" />
+  <defs
+     id="defs7">
+    <!-- Background: deep navy, diagonal -->
+    <linearGradient
+       id="bg"
+       x1="0"
+       y1="0"
+       x2="1"
+       y2="1">
+      <stop
+         offset="0%"
+         stop-color="#0E1F3C"
+         id="stop1" />
+      <stop
+         offset="100%"
+         stop-color="#1B3468"
+         id="stop2" />
+    </linearGradient>
+    <!-- Warm glow emanating from the sun -->
+    <radialGradient
+       id="glow"
+       cx="256"
+       cy="284"
+       r="280"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#F5A020"
+         stop-opacity="0.55"
+         id="stop3" />
+      <stop
+         offset="100%"
+         stop-color="#F5A020"
+         stop-opacity="0"
+         id="stop4" />
+    </radialGradient>
+    <!-- Sun: bright center, amber edges -->
+    <radialGradient
+       id="sun"
+       cx="256"
+       cy="236"
+       r="100"
+       gradientUnits="userSpaceOnUse">
+      <stop
+         offset="0%"
+         stop-color="#FFFDE0"
+         id="stop5" />
+      <stop
+         offset="45%"
+         stop-color="#F5A825"
+         id="stop6" />
+      <stop
+         offset="100%"
+         stop-color="#B86000"
+         id="stop7" />
+    </radialGradient>
+    <!-- Only render sun + rays above the book horizon -->
+    <clipPath
+       id="aboveHorizon">
+      <rect
+         x="0"
+         y="0"
+         width="512"
+         height="284"
+         id="rect7" />
+    </clipPath>
+  </defs>
+  <!-- Background -->
+  <rect
+     width="512"
+     height="512"
+     rx="112"
+     ry="112"
+     fill="url(#bg)"
+     id="rect8"
+     style="fill:#2a2aff" />
+  <!-- Subtle inner edge for depth -->
+  <rect
+     width="512"
+     height="512"
+     rx="112"
+     ry="112"
+     fill="none"
+     stroke="rgba(255,255,255,0.07)"
+     stroke-width="3"
+     id="rect9" />
+  <!-- Ambient warm glow -->
+  <ellipse
+     cx="256"
+     cy="284"
+     rx="260"
+     ry="220"
+     fill="url(#glow)"
+     id="ellipse9" />
+  <!-- Rays fanning upward, clipped at horizon -->
+  <g
+     clip-path="url(#aboveHorizon)"
+     stroke="#F5C535"
+     stroke-linecap="round"
+     id="g13">
+    <line
+       x1="256"
+       y1="284"
+       x2="256"
+       y2="114"
+       stroke-width="14"
+       opacity="0.65"
+       id="line9" />
+    <line
+       x1="256"
+       y1="284"
+       x2="362"
+       y2="162"
+       stroke-width="11"
+       opacity="0.50"
+       id="line10" />
+    <line
+       x1="256"
+       y1="284"
+       x2="150"
+       y2="162"
+       stroke-width="11"
+       opacity="0.50"
+       id="line11" />
+    <line
+       x1="256"
+       y1="284"
+       x2="414"
+       y2="226"
+       stroke-width="9"
+       opacity="0.35"
+       id="line12" />
+    <line
+       x1="256"
+       y1="284"
+       x2="98"
+       y2="226"
+       stroke-width="9"
+       opacity="0.35"
+       id="line13" />
+  </g>
+  <!-- Rising sun: top semicircle only -->
+  <circle
+     cx="256"
+     cy="284"
+     r="96"
+     fill="url(#sun)"
+     clip-path="url(#aboveHorizon)"
+     id="circle13" />
+  <!-- Open book — left page -->
+  <path
+     d="M 256 412 L 62 374 L 62 232 Q 158 260 256 284 Z"
+     fill="#E2EFF7"
+     opacity="0.95"
+     id="path13" />
+  <!-- Open book — right page -->
+  <path
+     d="M 256 412 L 450 374 L 450 232 Q 354 260 256 284 Z"
+     fill="#C8DCE8"
+     opacity="0.95"
+     id="path14" />
+  <!-- Spine -->
+  <line
+     x1="256"
+     y1="284"
+     x2="256"
+     y2="412"
+     stroke="#5C86A8"
+     stroke-width="4"
+     opacity="0.55"
+     id="line14" />
+</svg>
