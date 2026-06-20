@@ -113,7 +113,7 @@ function loadReflection() {
       if (firstLoad) {
         firstLoad = false;
         updateContent(entry);
-        fadeArticleIn('animate__fadeInDown');
+        fadeArticleIn('animate__fadeIn');
       } else {
         fadeArticleOut(function () {
           updateContent(entry);
