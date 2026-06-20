@@ -5,7 +5,7 @@ const LANGUAGES = [
 ];
 
 let currentLang = localStorage.getItem('aa-lang') || 'en';
-let currentDate = new Date();
+let currentDate = parseDateParam() || new Date();
 let firstLoad = true;
 let pendingAnimEnd = null;
 
@@ -71,12 +71,32 @@ document.addEventListener('DOMContentLoaded', function () {
     setCurrentDate(new Date(currentDate.getFullYear(), 0, dayOfYear));
   });
 
+  updateURL(currentDate);
   loadReflection();
 });
+
+function parseDateParam() {
+  const params = new URLSearchParams(window.location.search);
+  const raw = params.get('date');
+  if (!raw) return null;
+  const parts = raw.split('-').map(Number);
+  if (parts.length !== 3 || parts.some(isNaN)) return null;
+  const year = new Date().getFullYear();
+  const date = new Date(year, parts[1] - 1, parts[2]);
+  if (date.getMonth() !== parts[1] - 1 || date.getDate() !== parts[2]) return null;
+  return date;
+}
+
+function updateURL(date) {
+  const params = new URLSearchParams(window.location.search);
+  params.set('date', toInputValue(date));
+  history.replaceState(null, '', '?' + params.toString());
+}
 
 function setCurrentDate(date) {
   currentDate = date;
   document.getElementById('date-picker').value = toInputValue(date);
+  updateURL(date);
   loadReflection();
 }
 
