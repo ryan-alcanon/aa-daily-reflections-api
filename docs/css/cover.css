@@ -61,7 +61,9 @@ body {
 }
 
 .nav-date .nav-link {
-  color: var(--bs-secondary-color);
+    color: var(--bs-secondary-color);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
 .nav-date .nav-link:hover,
