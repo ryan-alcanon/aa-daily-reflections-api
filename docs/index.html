@@ -153,14 +153,15 @@
   </div>
   <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
     <header class="mb-auto">
-      <div>
-        <h3 class="float-md-start mb-0">AA Daily Reflections</h3>
-        <nav class="nav nav-masthead justify-content-center float-md-end">
-          <div class="lang-toggle-bar">
-            <div id="lang-toggle" role="group" aria-label="Language"></div>
-          </div>
-        </nav>
-      </div>
+      <nav class="navbar navbar-expand-md navbar-dark p-0">
+        <h3 class="navbar-brand mb-0 fw-bold">AA Daily Reflections</h3>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#headerNav" aria-controls="headerNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="headerNav">
+          <div id="lang-toggle" role="group" aria-label="Language" class="ms-auto"></div>
+        </div>
+      </nav>
     </header>
     <main class="px-3">
       <input type="date" id="date-picker" aria-hidden="true" style="opacity:0;position:absolute;width:0;height:0;">
@@ -179,12 +180,13 @@
           <a id="next-link" class="nav-link" href="#"><i class="bi bi-arrow-right-square"></i></a>
         </li>
       </ul>
+      
       <article>
-      <h1 id="title" class="display-1"></h1>
-      <h3><span id="monthName"></span> <span id="day"></span></h3>
+      <h1 id="title" class="display-3"></h1>
+      <h3 class="display-6"><span id="monthName"></span> <span id="day"></span></h3>
       <figure class="text-center">
         <blockquote class="blockquote">
-          <p><em><span id="quote"></span></em></p>
+          <p><em><span id="quote"></span></p>
         </blockquote>
         <figcaption class="blockquote-footer">
           Referenced from <cite id="reference" title="Reference From"></cite>
@@ -192,7 +194,6 @@
       </figure>
       <p id="reflection" class="lead"></p>
       </article>
-      <!-- <p class="lead"><a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Visit AA</a></p> -->
     </main>
 
     <footer class="mt-auto text-white-50">
