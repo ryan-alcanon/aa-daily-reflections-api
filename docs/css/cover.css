@@ -48,3 +48,40 @@ body {
   color: #fff;
   border-bottom-color: #fff;
 }
+
+
+/*
+ * Language toggle
+ */
+
+#lang-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-left: 1rem;
+  padding-left: 1rem;
+  border-left: 1px solid rgba(255, 255, 255, .2);
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  border-bottom: .25rem solid transparent;
+  padding: .25rem 0;
+  font-weight: 700;
+  font-size: .875rem;
+  color: rgba(255, 255, 255, .5);
+  cursor: pointer;
+  transition: color .15s, border-color .15s;
+}
+
+.lang-btn:hover,
+.lang-btn:focus {
+  color: rgba(255, 255, 255, .75);
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.lang-btn.active {
+  color: #fff;
+  border-bottom-color: #fff;
+}

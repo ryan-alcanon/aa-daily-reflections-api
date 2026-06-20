@@ -1,7 +1,7 @@
 const LANGUAGES = [
   { code: 'en', label: 'EN' },
   { code: 'es', label: 'ES' },
-  // { code: 'fr', label: 'FR' },  // uncomment when reflections-fr.json is ready
+  { code: 'fr', label: 'FR' },
 ];
 
 let currentLang = localStorage.getItem('aa-lang') || 'en';
@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
     toggleContainer.appendChild(btn);
   });
 
-  // Date picker
+  // Hidden date input — synced by setCurrentDate, opened by the calendar icon
   const datePicker = document.getElementById('date-picker');
   const year = currentDate.getFullYear();
   datePicker.min = year + '-01-01';
@@ -42,16 +42,29 @@ document.addEventListener('DOMContentLoaded', function () {
     setCurrentDate(new Date(parts[0], parts[1] - 1, parts[2]));
   });
 
+  // Calendar icon opens the hidden date picker
+  document.getElementById('date-picker-link').addEventListener('click', function (e) {
+    e.preventDefault();
+    if (datePicker.showPicker) {
+      datePicker.showPicker();
+    } else {
+      datePicker.click();
+    }
+  });
+
   // Prev / Next
-  document.getElementById('prev-btn').addEventListener('click', function () {
+  document.getElementById('prev-link').addEventListener('click', function (e) {
+    e.preventDefault();
     setCurrentDate(offsetDate(currentDate, -1));
   });
-  document.getElementById('next-btn').addEventListener('click', function () {
+  document.getElementById('next-link').addEventListener('click', function (e) {
+    e.preventDefault();
     setCurrentDate(offsetDate(currentDate, 1));
   });
 
   // Random
-  document.getElementById('random-btn').addEventListener('click', function () {
+  document.getElementById('random-link').addEventListener('click', function (e) {
+    e.preventDefault();
     const dayOfYear = Math.floor(Math.random() * 365) + 1;
     setCurrentDate(new Date(currentDate.getFullYear(), 0, dayOfYear));
   });
