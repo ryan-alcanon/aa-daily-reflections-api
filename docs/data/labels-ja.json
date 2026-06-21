@@ -1,7 +1,7 @@
 {
     "toggleTheme": "テーマの切り替え",
-    "longPageTitle": "アルコホーリクス・アノニマス（AA）の日々の振り返り",
-    "shortPageTitle": "AAの日々の振り返り",
+    "pageTitle": "アルコホーリクス・アノニマス（AA）の日々の振り返り",
+    "pageTitle-abbr": "AAの日々の振り返り",
     "previous": "戻る",
     "select": "選択",
     "random": "ランダム",

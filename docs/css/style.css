@@ -146,6 +146,11 @@ figcaption.blockquote-footer {
 .labels-abbreviated .label-full { display: none; }
 .labels-abbreviated .label-abbr { display: inline; }
 
+/* Abbreviated page title — shown when brand text overflows the navbar */
+#pageTitle .label-abbr { display: none; }
+#pageTitle.brand-abbreviated .label-full { display: none; }
+#pageTitle.brand-abbreviated .label-abbr { display: inline; }
+
 /* French titles are all-caps in the source data — normalize to sentence case */
 [lang="fr"] h1#title {
   text-transform: lowercase;

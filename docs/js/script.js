@@ -77,6 +77,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   setupAdaptiveLabels();
+  setupAdaptiveBrand();
   updateURL();
   loadLabels();
   loadReflection();
@@ -173,49 +174,55 @@ function loadLabels() {
       return r.ok ? r.json() : fetch('data/labels-en.json').then(function (r2) { return r2.json(); });
     })
     .then(function (labels) {
+      var keys = Object.keys(labels);
+
       // Determine which base keys have an abbreviated variant in this language
       var hasAbbr = new Set(
-        Object.keys(labels)
+        keys
           .filter(function (k) { return k.endsWith('-abbr'); })
           .map(function (k) { return k.slice(0, -5); })
       );
 
-      Object.entries(labels).forEach(function (pair) {
-        var key = pair[0], value = pair[1];
-
-        if (key.endsWith('-abbr')) {
-          // Populate the .label-abbr span inside the base element
-          var baseEl = document.getElementById(key.slice(0, -5));
-          if (!baseEl) return;
-          var abbrSpan = baseEl.querySelector('.label-abbr');
-          if (!abbrSpan) {
-            abbrSpan = document.createElement('span');
-            abbrSpan.className = 'label-abbr';
-            baseEl.appendChild(abbrSpan);
+      // Pass 1 — base keys: set element content and create .label-full spans where needed.
+      // Must run before pass 2 so that el.textContent = '' never wipes a .label-abbr span
+      // that was already appended.
+      keys.filter(function (k) { return !k.endsWith('-abbr'); }).forEach(function (key) {
+        var el = document.getElementById(key);
+        if (!el) return;
+        var value = labels[key];
+        if (hasAbbr.has(key)) {
+          var fullSpan = el.querySelector('.label-full');
+          if (!fullSpan) {
+            fullSpan = document.createElement('span');
+            fullSpan.className = 'label-full';
+            el.textContent = '';
+            el.appendChild(fullSpan);
           }
-          abbrSpan.textContent = value;
+          fullSpan.textContent = value;
         } else {
-          var el = document.getElementById(key);
-          if (!el) return;
-          if (hasAbbr.has(key)) {
-            // Wrap in .label-full so CSS can hide it when abbreviated
-            var fullSpan = el.querySelector('.label-full');
-            if (!fullSpan) {
-              fullSpan = document.createElement('span');
-              fullSpan.className = 'label-full';
-              el.textContent = '';
-              el.appendChild(fullSpan);
-            }
-            fullSpan.textContent = value;
-          } else {
-            // No abbr variant — set text directly (clears any spans from a prior language)
-            el.textContent = value;
-          }
+          // No abbr for this key — plain text (also clears any spans left by a prior language)
+          el.textContent = value;
         }
       });
 
+      // Pass 2 — abbr keys: base elements are fully set up, safe to append .label-abbr spans.
+      keys.filter(function (k) { return k.endsWith('-abbr'); }).forEach(function (key) {
+        var el = document.getElementById(key.slice(0, -5));
+        if (!el) return;
+        var abbrSpan = el.querySelector('.label-abbr');
+        if (!abbrSpan) {
+          abbrSpan = document.createElement('span');
+          abbrSpan.className = 'label-abbr';
+          el.appendChild(abbrSpan);
+        }
+        abbrSpan.textContent = labels[key];
+      });
+
       // Re-evaluate wrapping now that label text has changed
-      requestAnimationFrame(checkLabelAbbr);
+      requestAnimationFrame(function () {
+        checkLabelAbbr();
+        checkBrandAbbr();
+      });
     })
     .catch(function (err) { console.error('Error loading labels:', err.message); });
 }
@@ -240,6 +247,22 @@ function setupAdaptiveLabels() {
   var nav = document.querySelector('ul.nav-date');
   if (!nav) return;
   new ResizeObserver(checkLabelAbbr).observe(nav);
+}
+
+function checkBrandAbbr() {
+  var brand = document.getElementById('pageTitle');
+  if (!brand) return;
+  if (!brand.querySelector('.label-abbr')) {
+    brand.classList.remove('brand-abbreviated');
+    return;
+  }
+  brand.classList.toggle('brand-abbreviated', brand.scrollWidth > brand.clientWidth);
+}
+
+function setupAdaptiveBrand() {
+  var navbar = document.querySelector('nav.navbar');
+  if (!navbar) return;
+  new ResizeObserver(checkBrandAbbr).observe(navbar);
 }
 
 function fadeArticleOut(callback) {

@@ -1,7 +1,7 @@
 {
     "toggleTheme": "Cambiar tema",
-    "longPageTitle": "Reflexiones diarias de Alcohólicos Anónimos",
-    "shortPageTitle": "Reflexiones diarias de AA",
+    "pageTitle": "Reflexiones diarias de Alcohólicos Anónimos",
+    "pageTitle-abbr": "Reflexiones diarias de AA",
     "previous": "Atrás",
     "previous-abbr": "Ant.",
     "select": "Elegir",

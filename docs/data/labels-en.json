@@ -1,7 +1,7 @@
 {
     "toggleTheme": "Toggle theme",
-    "longPageTitle": "Alcoholics Anonymous Daily Reflections",
-    "shortPageTitle": "AA Daily Reflections",
+    "pageTitle": "Alcoholics Anonymous Daily Reflections",
+    "pageTitle-abbr": "AA Daily Reflections",
     "previous": "Previous",
     "select": "Select",
     "random": "Random",
