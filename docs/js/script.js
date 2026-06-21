@@ -76,6 +76,7 @@ document.addEventListener('DOMContentLoaded', function () {
     setCurrentDate(new Date(currentDate.getFullYear(), 0, dayOfYear));
   });
 
+  setupAdaptiveLabels();
   updateURL();
   loadLabels();
   loadReflection();
@@ -172,12 +173,73 @@ function loadLabels() {
       return r.ok ? r.json() : fetch('data/labels-en.json').then(function (r2) { return r2.json(); });
     })
     .then(function (labels) {
-      Object.entries(labels).forEach(function (entry) {
-        var el = document.getElementById(entry[0]);
-        if (el) el.textContent = entry[1];
+      // Determine which base keys have an abbreviated variant in this language
+      var hasAbbr = new Set(
+        Object.keys(labels)
+          .filter(function (k) { return k.endsWith('-abbr'); })
+          .map(function (k) { return k.slice(0, -5); })
+      );
+
+      Object.entries(labels).forEach(function (pair) {
+        var key = pair[0], value = pair[1];
+
+        if (key.endsWith('-abbr')) {
+          // Populate the .label-abbr span inside the base element
+          var baseEl = document.getElementById(key.slice(0, -5));
+          if (!baseEl) return;
+          var abbrSpan = baseEl.querySelector('.label-abbr');
+          if (!abbrSpan) {
+            abbrSpan = document.createElement('span');
+            abbrSpan.className = 'label-abbr';
+            baseEl.appendChild(abbrSpan);
+          }
+          abbrSpan.textContent = value;
+        } else {
+          var el = document.getElementById(key);
+          if (!el) return;
+          if (hasAbbr.has(key)) {
+            // Wrap in .label-full so CSS can hide it when abbreviated
+            var fullSpan = el.querySelector('.label-full');
+            if (!fullSpan) {
+              fullSpan = document.createElement('span');
+              fullSpan.className = 'label-full';
+              el.textContent = '';
+              el.appendChild(fullSpan);
+            }
+            fullSpan.textContent = value;
+          } else {
+            // No abbr variant — set text directly (clears any spans from a prior language)
+            el.textContent = value;
+          }
+        }
       });
+
+      // Re-evaluate wrapping now that label text has changed
+      requestAnimationFrame(checkLabelAbbr);
     })
     .catch(function (err) { console.error('Error loading labels:', err.message); });
+}
+
+function checkLabelAbbr() {
+  var nav = document.querySelector('ul.nav-date');
+  if (!nav) return;
+  if (!nav.querySelector('.label-abbr')) {
+    nav.classList.remove('labels-abbreviated');
+    return;
+  }
+  var items = nav.querySelectorAll('.nav-item');
+  if (!items.length) return;
+  var firstTop = Math.round(items[0].getBoundingClientRect().top);
+  var wrapped = Array.from(items).some(function (item) {
+    return Math.round(item.getBoundingClientRect().top) > firstTop;
+  });
+  nav.classList.toggle('labels-abbreviated', wrapped);
+}
+
+function setupAdaptiveLabels() {
+  var nav = document.querySelector('ul.nav-date');
+  if (!nav) return;
+  new ResizeObserver(checkLabelAbbr).observe(nav);
 }
 
 function fadeArticleOut(callback) {

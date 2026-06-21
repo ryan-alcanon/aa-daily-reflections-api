@@ -3,8 +3,12 @@
     "longPageTitle": "Reflexiones diarias de Alcohólicos Anónimos",
     "shortPageTitle": "Reflexiones diarias de AA",
     "previous": "Atrás",
-    "select": "Seleccionar",
-    "random": "Aleatorio",
-    "next": "Adelante",
+    "previous-abbr": "Ant.",
+    "select": "Elegir",
+    "select-abbr": "Sel.",
+    "random": "Azar",
+    "random-abbr": "Aleat.",
+    "next": "Avance",
+    "next-abbr": "Sig.",
     "referencedFrom": "Referenciado desde"
 }

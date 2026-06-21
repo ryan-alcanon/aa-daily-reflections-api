@@ -141,6 +141,11 @@ figcaption.blockquote-footer {
   padding-top: 0.5rem;
 }
 
+/* Abbreviated nav labels — shown when full labels cause wrapping */
+.label-abbr { display: none; }
+.labels-abbreviated .label-full { display: none; }
+.labels-abbreviated .label-abbr { display: inline; }
+
 /* French titles are all-caps in the source data — normalize to sentence case */
 [lang="fr"] h1#title {
   text-transform: lowercase;

@@ -1,10 +1,14 @@
 {
     "toggleTheme": "Changer de thème",
-    "longPageTitle": "Alcoholics Anonymous Daily Reflections",
-    "shortPageTitle": "Réflexions quotidiennes des AA",
+    "pageTitle": "Réflexions quotidiennes des Alcooliques Anonymes",
+    "pageTitle-abbr": "Réflexions quotidiennes des AA",
     "previous": "Précédent",
+    "previous-abbr": "Préc.",
     "select": "Sélectionner",
+    "select-abbr": "Sél.",
     "random": "Aléatoire",
+    "random-abbr": "Aléa",
     "next": "Suivant",
+    "next-abbr": "Suiv.",
     "referencedFrom": "Référencé dans"
 }
