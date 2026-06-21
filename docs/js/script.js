@@ -82,6 +82,14 @@ document.addEventListener('DOMContentLoaded', function () {
   updateURL();
   loadLabels();
   loadReflection();
+
+  window.addEventListener('popstate', function () {
+    var d = parseDateParam();
+    if (!d) return;
+    currentDate = d;
+    document.getElementById('date-picker').value = toInputValue(d);
+    loadReflection();
+  });
 });
 
 function parseLangParam() {
@@ -110,18 +118,23 @@ function parseDateParam() {
   return date;
 }
 
-function updateURL() {
+function updateURL(push) {
   const params = new URLSearchParams();
   params.set('lang', currentLang);
   params.set('date', toInputValue(currentDate));
   if (currentSong !== null) params.set('song', String(currentSong));
-  history.replaceState(null, '', '?' + params.toString());
+  const url = '?' + params.toString();
+  if (push) {
+    history.pushState(null, '', url);
+  } else {
+    history.replaceState(null, '', url);
+  }
 }
 
 function setCurrentDate(date) {
   currentDate = date;
   document.getElementById('date-picker').value = toInputValue(date);
-  updateURL();
+  updateURL(true);
   loadReflection();
 }
 
@@ -346,19 +359,19 @@ function initMusic() {
       btn.appendChild(icon);
       if (langToggle) langToggle.appendChild(btn);
 
-      // Respect the stored play/pause preference; default to playing.
-      var shouldPlay = localStorage.getItem('aa-music-playing') !== 'false';
-      if (shouldPlay) {
+      // Autoplay unless the user has explicitly paused.
+      var userPaused = localStorage.getItem('aa-music-paused') === 'true';
+      if (!userPaused) {
         audioPlayer.play()
           .then(function () { setMusicPlaying(true); })
           .catch(function () {
-            // Browser blocked autoplay — don't overwrite the preference.
+            // Browser blocked autoplay — don't record this as a user pause.
             // Resume on the first user interaction instead.
             setMusicPlaying(false, false);
             resumeOnInteraction();
           });
       } else {
-        setMusicPlaying(false, false); // reflecting stored preference — no need to re-save
+        setMusicPlaying(false, false);
       }
 
       btn.addEventListener('click', function () {
@@ -378,14 +391,20 @@ function resumeOnInteraction() {
   function handler() {
     events.forEach(function (e) { document.removeEventListener(e, handler); });
     if (!audioPlayer || !audioPlayer.paused) return;
-    if (localStorage.getItem('aa-music-playing') === 'false') return;
+    if (localStorage.getItem('aa-music-paused') === 'true') return;
     audioPlayer.play().then(function () { setMusicPlaying(true); }).catch(function () {});
   }
   events.forEach(function (e) { document.addEventListener(e, handler); });
 }
 
 function setMusicPlaying(playing, persist) {
-  if (persist !== false) localStorage.setItem('aa-music-playing', playing ? 'true' : 'false');
+  if (persist !== false) {
+    if (playing) {
+      localStorage.removeItem('aa-music-paused');
+    } else {
+      localStorage.setItem('aa-music-paused', 'true');
+    }
+  }
   var icon = document.getElementById('music-icon');
   var btn  = document.getElementById('music-toggle');
   if (icon) icon.classList.toggle('music-playing', playing);
