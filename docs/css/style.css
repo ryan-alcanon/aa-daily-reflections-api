@@ -134,7 +134,7 @@ button#music-toggle #music-icon {
     display: inline-block;
     width: 1em;
     height: 1em;
-    vertical-align: middle;
+    vertical-align: 0;
     background-color: currentColor;
     -webkit-mask: url('../images/volume-off-alt.svg') center / contain no-repeat;
     mask: url('../images/volume-off-alt.svg') center / contain no-repeat;
@@ -172,12 +172,21 @@ footer p#copyright {
   margin-bottom: 0;
 }
 
-/* Music toggle sits inside #lang-toggle as the last flex item.
+/* Music and share toggles sit inside #lang-toggle as the last flex items.
    margin-left:auto is a no-op on desktop (lang-toggle is content-sized, no free space),
    but on mobile the open collapse stretches lang-toggle to full width, so the auto margin
-   pushes the button to the right edge of the overflow menu. */
+   pushes them to the right edge of the overflow menu. */
 #music-toggle {
   margin-left: auto;
+}
+
+button#share-toggle, button#share-toggle:focus, button#share-toggle:active {
+  color: var(--bs-secondary-color);
+  border-bottom: none;
+}
+
+button#share-toggle:hover {
+  color: var(--bs-emphasis-color);
 }
 
 /* Abbreviated nav labels — shown when full labels cause wrapping */

@@ -8,7 +8,8 @@ const LANGUAGES = [
 let currentLang = parseLangParam() || localStorage.getItem('aa-lang') || 'en';
 document.documentElement.lang = currentLang;
 let currentDate = parseDateParam() || new Date();
-let currentSong  = parseSongParam(); // 1-based index into music.json, or null
+let songInURL = parseSongParam();   // non-null only when ?song= was in the URL (or locked via share button)
+let currentSong = songInURL;        // 1-based index of the currently playing song
 let firstLoad = true;
 let pendingAnimEnd = null;
 
@@ -122,7 +123,7 @@ function updateURL(push) {
   const params = new URLSearchParams();
   params.set('lang', currentLang);
   params.set('date', toInputValue(currentDate));
-  if (currentSong !== null) params.set('song', String(currentSong));
+  if (songInURL !== null) params.set('song', String(songInURL));
   const url = '?' + params.toString();
   if (push) {
     history.pushState(null, '', url);
@@ -327,21 +328,17 @@ function initMusic() {
     .then(function (files) {
       if (!files || !files.length) return;
 
-      // Song priority: URL param → localStorage → random
+      // Song priority: URL param (bookmarked) → random
+      // Random songs are never stored — a fresh visit or refresh always picks a new one.
       var idx;
-      var storedSong = parseInt(localStorage.getItem('aa-song'), 10);
-      if (currentSong !== null && currentSong >= 1 && currentSong <= files.length) {
-        idx = currentSong - 1;
-      } else if (!isNaN(storedSong) && storedSong >= 1 && storedSong <= files.length) {
-        idx = storedSong - 1;
-        currentSong = storedSong;
-        updateURL();
+      if (songInURL !== null && songInURL >= 1 && songInURL <= files.length) {
+        idx = songInURL - 1;
+        currentSong = songInURL;
       } else {
         idx = Math.floor(Math.random() * files.length);
         currentSong = idx + 1;
-        updateURL();
+        songInURL = null; // keep out of URL so refresh gives a new random song
       }
-      localStorage.setItem('aa-song', String(currentSong));
 
       audioPlayer = new Audio(files[idx]);
       audioPlayer.loop = true;
@@ -380,6 +377,27 @@ function initMusic() {
         } else {
           audioPlayer.pause();
           setMusicPlaying(false);
+        }
+      });
+
+      // Share button — locks the current date+song into the URL for bookmarking
+      var shareBtn = document.createElement('button');
+      shareBtn.id = 'share-toggle';
+      shareBtn.className = 'lang-btn';
+      shareBtn.setAttribute('aria-label', 'Copy bookmark link');
+      shareBtn.innerHTML = '<i class="bi bi-link-45deg" aria-hidden="true"></i>';
+      if (langToggle) langToggle.appendChild(shareBtn);
+
+      shareBtn.addEventListener('click', function () {
+        songInURL = currentSong;
+        updateURL();
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(location.href).then(function () {
+            shareBtn.innerHTML = '<i class="bi bi-check-lg" aria-hidden="true"></i>';
+            setTimeout(function () {
+              shareBtn.innerHTML = '<i class="bi bi-link-45deg" aria-hidden="true"></i>';
+            }, 1500);
+          }).catch(function () {});
         }
       });
     })
