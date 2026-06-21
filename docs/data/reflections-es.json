@@ -2,6 +2,7 @@
   {
     "title": "“YO SOY UN MILAGRO”",
     "date": "01-01",
+    "dateName": "enero 1",
     "day": 1,
     "month": 1,
     "monthName": "enero",
@@ -13,6 +14,7 @@
   {
     "title": "PRIMERO, LOS CIMIENTOS",
     "date": "01-02",
+    "dateName": "enero 2",
     "day": 2,
     "month": 1,
     "monthName": "enero",
@@ -24,6 +26,7 @@
   {
     "title": "IMPOTENTE",
     "date": "01-03",
+    "dateName": "enero 3",
     "day": 3,
     "month": 1,
     "monthName": "enero",
@@ -35,6 +38,7 @@
   {
     "title": "EMPIEZA DONDE ESTÁS",
     "date": "01-04",
+    "dateName": "enero 4",
     "day": 4,
     "month": 1,
     "monthName": "enero",
@@ -46,6 +50,7 @@
   {
     "title": "ACEPTACIÓN TOTAL",
     "date": "01-05",
+    "dateName": "enero 5",
     "day": 5,
     "month": 1,
     "monthName": "enero",
@@ -57,6 +62,7 @@
   {
     "title": "LA VICTORIA DE LA RENDICIÓN",
     "date": "01-06",
+    "dateName": "enero 6",
     "day": 6,
     "month": 1,
     "monthName": "enero",
@@ -68,6 +74,7 @@
   {
     "title": "EN EL PUNTO DE CAMBIO",
     "date": "01-07",
+    "dateName": "enero 7",
     "day": 7,
     "month": 1,
     "monthName": "enero",
@@ -79,6 +86,7 @@
   {
     "title": "¿TENGO UNA OPCIÓN?",
     "date": "01-08",
+    "dateName": "enero 8",
     "day": 8,
     "month": 1,
     "monthName": "enero",
@@ -90,6 +98,7 @@
   {
     "title": "UN ACTO DE LA PROVIDENCIA",
     "date": "01-09",
+    "dateName": "enero 9",
     "day": 9,
     "month": 1,
     "monthName": "enero",
@@ -101,6 +110,7 @@
   {
     "title": "UNIDOS NOS MANTENEMOS",
     "date": "01-10",
+    "dateName": "enero 10",
     "day": 10,
     "month": 1,
     "monthName": "enero",
@@ -112,6 +122,7 @@
   {
     "title": "EL PASO CIEN POR CIEN",
     "date": "01-11",
+    "dateName": "enero 11",
     "day": 11,
     "month": 1,
     "monthName": "enero",
@@ -123,6 +134,7 @@
   {
     "title": "ACEPTAR NUESTRAS CIRCUNSTANCIAS ACTUALES",
     "date": "01-12",
+    "dateName": "enero 12",
     "day": 12,
     "month": 1,
     "monthName": "enero",
@@ -134,6 +146,7 @@
   {
     "title": "NO SUCEDE DE LA NOCHE A LA MAÑANA",
     "date": "01-13",
+    "dateName": "enero 13",
     "day": 13,
     "month": 1,
     "monthName": "enero",
@@ -145,6 +158,7 @@
   {
     "title": "SIN LAMENTACIONES",
     "date": "01-14",
+    "dateName": "enero 14",
     "day": 14,
     "month": 1,
     "monthName": "enero",
@@ -156,6 +170,7 @@
   {
     "title": "UN INSOSPECHADO RECURSO INTERIOR",
     "date": "01-15",
+    "dateName": "enero 15",
     "day": 15,
     "month": 1,
     "monthName": "enero",
@@ -167,6 +182,7 @@
   {
     "title": "TOCAR FONDO",
     "date": "01-16",
+    "dateName": "enero 16",
     "day": 16,
     "month": 1,
     "monthName": "enero",
@@ -178,6 +194,7 @@
   {
     "title": "LA FELICIDAD LLEGA QUEDAMENTE",
     "date": "01-17",
+    "dateName": "enero 17",
     "day": 17,
     "month": 1,
     "monthName": "enero",
@@ -189,6 +206,7 @@
   {
     "title": "¿TE AYUDARÍA UN TRAGO?",
     "date": "01-18",
+    "dateName": "enero 18",
     "day": 18,
     "month": 1,
     "monthName": "enero",
@@ -200,6 +218,7 @@
   {
     "title": "FE A TODA HORA",
     "date": "01-19",
+    "dateName": "enero 19",
     "day": 19,
     "month": 1,
     "monthName": "enero",
@@ -211,6 +230,7 @@
   {
     "title": "“HACEMOS UNA PAUSA... Y PEDIMOS”",
     "date": "01-20",
+    "dateName": "enero 20",
     "day": 20,
     "month": 1,
     "monthName": "enero",
@@ -222,6 +242,7 @@
   {
     "title": "SERVIR A MI HERMANO",
     "date": "01-21",
+    "dateName": "enero 21",
     "day": 21,
     "month": 1,
     "monthName": "enero",
@@ -233,6 +254,7 @@
   {
     "title": "“MANTENGÁMOSLO SIMPLE”",
     "date": "01-22",
+    "dateName": "enero 22",
     "day": 22,
     "month": 1,
     "monthName": "enero",
@@ -244,6 +266,7 @@
   {
     "title": "¿YA TE ESTÁS DIVIRTIENDO?",
     "date": "01-23",
+    "dateName": "enero 23",
     "day": 23,
     "month": 1,
     "monthName": "enero",
@@ -255,6 +278,7 @@
   {
     "title": "LA PARTICIPACIÓN",
     "date": "01-24",
+    "dateName": "enero 24",
     "day": 24,
     "month": 1,
     "monthName": "enero",
@@ -266,6 +290,7 @@
   {
     "title": "UNOS A OTROS — LO QUE NECESITAMOS",
     "date": "01-25",
+    "dateName": "enero 25",
     "day": 25,
     "month": 1,
     "monthName": "enero",
@@ -277,6 +302,7 @@
   {
     "title": "RIGUROSA HONESTIDAD",
     "date": "01-26",
+    "dateName": "enero 26",
     "day": 26,
     "month": 1,
     "monthName": "enero",
@@ -288,6 +314,7 @@
   {
     "title": "LIBERADO DE LA CULPA",
     "date": "01-27",
+    "dateName": "enero 27",
     "day": 27,
     "month": 1,
     "monthName": "enero",
@@ -299,6 +326,7 @@
   {
     "title": "EL TESORO DEL PASADO",
     "date": "01-28",
+    "dateName": "enero 28",
     "day": 28,
     "month": 1,
     "monthName": "enero",
@@ -310,6 +338,7 @@
   {
     "title": "LA ALEGRÍA DE COMPARTIR",
     "date": "01-29",
+    "dateName": "enero 29",
     "day": 29,
     "month": 1,
     "monthName": "enero",
@@ -321,6 +350,7 @@
   {
     "title": "LIBRE DE… LIBRE PARA",
     "date": "01-30",
+    "dateName": "enero 30",
     "day": 30,
     "month": 1,
     "monthName": "enero",
@@ -332,6 +362,7 @@
   {
     "title": "NUESTRO BIENESTAR COMÚN TIENE LA PREFERENCIA",
     "date": "01-31",
+    "dateName": "enero 31",
     "day": 31,
     "month": 1,
     "monthName": "enero",
@@ -343,6 +374,7 @@
   {
     "title": "META: LA CORDURA",
     "date": "02-01",
+    "dateName": "febrero 1",
     "day": 1,
     "month": 2,
     "monthName": "febrero",
@@ -354,6 +386,7 @@
   {
     "title": "RESCATADO POR LA RENDICIÓN",
     "date": "02-02",
+    "dateName": "febrero 2",
     "day": 2,
     "month": 2,
     "monthName": "febrero",
@@ -365,6 +398,7 @@
   {
     "title": "LLENAR EL VACÍO",
     "date": "02-03",
+    "dateName": "febrero 3",
     "day": 3,
     "month": 2,
     "monthName": "febrero",
@@ -376,6 +410,7 @@
   {
     "title": "CUANDO FALTA LA FE",
     "date": "02-04",
+    "dateName": "febrero 4",
     "day": 4,
     "month": 2,
     "monthName": "febrero",
@@ -387,6 +422,7 @@
   {
     "title": "GLORIOSA LIBERACIÓN",
     "date": "02-05",
+    "dateName": "febrero 5",
     "day": 5,
     "month": 2,
     "monthName": "febrero",
@@ -398,6 +434,7 @@
   {
     "title": "UN PUNTO DE CONVERGENCIA",
     "date": "02-06",
+    "dateName": "febrero 6",
     "day": 6,
     "month": 2,
     "monthName": "febrero",
@@ -409,6 +446,7 @@
   {
     "title": "UN SENDERO HACIA LA FE",
     "date": "02-07",
+    "dateName": "febrero 7",
     "day": 7,
     "month": 2,
     "monthName": "febrero",
@@ -420,6 +458,7 @@
   {
     "title": "CÓMO CONVENCER AL “SR. HYDE”",
     "date": "02-08",
+    "dateName": "febrero 8",
     "day": 8,
     "month": 2,
     "monthName": "febrero",
@@ -431,6 +470,7 @@
   {
     "title": "CAPTAR EL “ASPECTO ESPIRITUAL”",
     "date": "02-09",
+    "dateName": "febrero 9",
     "day": 9,
     "month": 2,
     "monthName": "febrero",
@@ -442,6 +482,7 @@
   {
     "title": "YO NO DIRIJO EL ESPECTÁCULO",
     "date": "02-10",
+    "dateName": "febrero 10",
     "day": 10,
     "month": 2,
     "monthName": "febrero",
@@ -453,6 +494,7 @@
   {
     "title": "LOS LÍMITES DE LA CONFIANZA EN UNO MISMO",
     "date": "02-11",
+    "dateName": "febrero 11",
     "day": 11,
     "month": 2,
     "monthName": "febrero",
@@ -464,6 +506,7 @@
   {
     "title": "LA RAÍZ DE NUESTRAS DIFICULTADES",
     "date": "02-12",
+    "dateName": "febrero 12",
     "day": 12,
     "month": 2,
     "monthName": "febrero",
@@ -475,6 +518,7 @@
   {
     "title": "NO PODEMOS LOGRAR LA SOBRIEDAD SÓLO CON EL PENSAMIENTO",
     "date": "02-13",
+    "dateName": "febrero 13",
     "day": 13,
     "month": 2,
     "monthName": "febrero",
@@ -486,6 +530,7 @@
   {
     "title": "ESPERANZAS Y EXIGENCIAS",
     "date": "02-14",
+    "dateName": "febrero 14",
     "day": 14,
     "month": 2,
     "monthName": "febrero",
@@ -497,6 +542,7 @@
   {
     "title": "PONERSE EN ACCIÓN",
     "date": "02-15",
+    "dateName": "febrero 15",
     "day": 15,
     "month": 2,
     "monthName": "febrero",
@@ -508,6 +554,7 @@
   {
     "title": "EL COMPROMISO",
     "date": "02-16",
+    "dateName": "febrero 16",
     "day": 16,
     "month": 2,
     "monthName": "febrero",
@@ -519,6 +566,7 @@
   {
     "title": "EL AMOR EN SUS OJOS",
     "date": "02-17",
+    "dateName": "febrero 17",
     "day": 17,
     "month": 2,
     "monthName": "febrero",
@@ -530,6 +578,7 @@
   {
     "title": "CADA UNO SIGUE SU PROPIO CAMINO",
     "date": "02-18",
+    "dateName": "febrero 18",
     "day": 18,
     "month": 2,
     "monthName": "febrero",
@@ -541,6 +590,7 @@
   {
     "title": "NO SOY DIFERENTE",
     "date": "02-19",
+    "dateName": "febrero 19",
     "day": 19,
     "month": 2,
     "monthName": "febrero",
@@ -552,6 +602,7 @@
   {
     "title": "EL DON DE LA RISA",
     "date": "02-20",
+    "dateName": "febrero 20",
     "day": 20,
     "month": 2,
     "monthName": "febrero",
@@ -563,6 +614,7 @@
   {
     "title": "SOY PARTE DEL TODO",
     "date": "02-21",
+    "dateName": "febrero 21",
     "day": 21,
     "month": 2,
     "monthName": "febrero",
@@ -574,6 +626,7 @@
   {
     "title": "ORIENTACIÓN",
     "date": "02-22",
+    "dateName": "febrero 22",
     "day": 22,
     "month": 2,
     "monthName": "febrero",
@@ -585,6 +638,7 @@
   {
     "title": "PARADOJAS MISTERIOSAS",
     "date": "02-23",
+    "dateName": "febrero 23",
     "day": 23,
     "month": 2,
     "monthName": "febrero",
@@ -596,6 +650,7 @@
   {
     "title": "UN CORAZÓN AGRADECIDO",
     "date": "02-24",
+    "dateName": "febrero 24",
     "day": 24,
     "month": 2,
     "monthName": "febrero",
@@ -607,6 +662,7 @@
   {
     "title": "EL DESAFÍO DEL FRACASO",
     "date": "02-25",
+    "dateName": "febrero 25",
     "day": 25,
     "month": 2,
     "monthName": "febrero",
@@ -618,6 +674,7 @@
   {
     "title": "UNA HISTORIA DE ÉXITO FUERA DE LO COMÚN",
     "date": "02-26",
+    "dateName": "febrero 26",
     "day": 26,
     "month": 2,
     "monthName": "febrero",
@@ -629,6 +686,7 @@
   {
     "title": "UNA ESTABILIDAD ÚNICA",
     "date": "02-27",
+    "dateName": "febrero 27",
     "day": 27,
     "month": 2,
     "monthName": "febrero",
@@ -640,6 +698,7 @@
   {
     "title": "¿CÓMO? ¿NO HAY PRESIDENTE?",
     "date": "02-28",
+    "dateName": "febrero 28",
     "day": 28,
     "month": 2,
     "monthName": "febrero",
@@ -651,6 +710,7 @@
   {
     "title": "UN MILAGRO DE A.A.",
     "date": "02-29",
+    "dateName": "febrero 29",
     "day": 29,
     "month": 2,
     "monthName": "febrero",
@@ -662,6 +722,7 @@
   {
     "title": "FUNCIONA",
     "date": "03-01",
+    "dateName": "marzo 1",
     "day": 1,
     "month": 3,
     "monthName": "marzo",
@@ -673,6 +734,7 @@
   {
     "title": "LA ESPERANZA",
     "date": "03-02",
+    "dateName": "marzo 2",
     "day": 2,
     "month": 3,
     "monthName": "marzo",
@@ -684,6 +746,7 @@
   {
     "title": "SUPERAR LA OBSTINACIÓN",
     "date": "03-03",
+    "dateName": "marzo 3",
     "day": 3,
     "month": 3,
     "monthName": "marzo",
@@ -695,6 +758,7 @@
   {
     "title": "DESYERBAR EL JARDÍN",
     "date": "03-04",
+    "dateName": "marzo 4",
     "day": 4,
     "month": 3,
     "monthName": "marzo",
@@ -706,6 +770,7 @@
   {
     "title": "UNA TAREA DE POR VIDA",
     "date": "03-05",
+    "dateName": "marzo 5",
     "day": 5,
     "month": 3,
     "monthName": "marzo",
@@ -717,6 +782,7 @@
   {
     "title": "LA IDEA DE LA FE",
     "date": "03-06",
+    "dateName": "marzo 6",
     "day": 6,
     "month": 3,
     "monthName": "marzo",
@@ -728,6 +794,7 @@
   {
     "title": "LA CLAVE ESTÁ EN LA BUENA VOLUNTAD",
     "date": "03-07",
+    "dateName": "marzo 7",
     "day": 7,
     "month": 3,
     "monthName": "marzo",
@@ -739,6 +806,7 @@
   {
     "title": "DEJARLO EN MANOS DE DIOS",
     "date": "03-08",
+    "dateName": "marzo 8",
     "day": 8,
     "month": 3,
     "monthName": "marzo",
@@ -750,6 +818,7 @@
   {
     "title": "ABANDONAR LA OBSTINACIÓN",
     "date": "03-09",
+    "dateName": "marzo 9",
     "day": 9,
     "month": 3,
     "monthName": "marzo",
@@ -761,6 +830,7 @@
   {
     "title": "HOY TENGO LA OPCIÓN",
     "date": "03-10",
+    "dateName": "marzo 10",
     "day": 10,
     "month": 3,
     "monthName": "marzo",
@@ -772,6 +842,7 @@
   {
     "title": "DIRECCIÓN BUENA Y ORDENADA",
     "date": "03-11",
+    "dateName": "marzo 11",
     "day": 11,
     "month": 3,
     "monthName": "marzo",
@@ -783,6 +854,7 @@
   {
     "title": "EL PLAN DE UN DÍA",
     "date": "03-12",
+    "dateName": "marzo 12",
     "day": 12,
     "month": 3,
     "monthName": "marzo",
@@ -794,6 +866,7 @@
   {
     "title": "EL MUNDO DEL ESPÍRITU",
     "date": "03-13",
+    "dateName": "marzo 13",
     "day": 13,
     "month": 3,
     "monthName": "marzo",
@@ -805,6 +878,7 @@
   {
     "title": "LA PIEDRA CLAVE",
     "date": "03-14",
+    "dateName": "marzo 14",
     "day": 14,
     "month": 3,
     "monthName": "marzo",
@@ -816,6 +890,7 @@
   {
     "title": "LA IDEA DE DIOS",
     "date": "03-15",
+    "dateName": "marzo 15",
     "day": 15,
     "month": 3,
     "monthName": "marzo",
@@ -827,6 +902,7 @@
   {
     "title": "COMO NOSOTROS LO CONCEBIMOS",
     "date": "03-16",
+    "dateName": "marzo 16",
     "day": 16,
     "month": 3,
     "monthName": "marzo",
@@ -838,6 +914,7 @@
   {
     "title": "FORMAS MISTERIOSAS",
     "date": "03-17",
+    "dateName": "marzo 17",
     "day": 17,
     "month": 3,
     "monthName": "marzo",
@@ -849,6 +926,7 @@
   {
     "title": "LA VERDADERA INDEPENDENCIA",
     "date": "03-18",
+    "dateName": "marzo 18",
     "day": 18,
     "month": 3,
     "monthName": "marzo",
@@ -860,6 +938,7 @@
   {
     "title": "LA ORACIÓN DA RESULTADOS",
     "date": "03-19",
+    "dateName": "marzo 19",
     "day": 19,
     "month": 3,
     "monthName": "marzo",
@@ -871,6 +950,7 @@
   {
     "title": "EL AMOR Y LA TOLERANCIA",
     "date": "03-20",
+    "dateName": "marzo 20",
     "day": 20,
     "month": 3,
     "monthName": "marzo",
@@ -882,6 +962,7 @@
   {
     "title": "BIENESTAR MATERIAL Y ESPIRITUAL",
     "date": "03-21",
+    "dateName": "marzo 21",
     "day": 21,
     "month": 3,
     "monthName": "marzo",
@@ -893,6 +974,7 @@
   {
     "title": "NO MÁS PELEAS",
     "date": "03-22",
+    "dateName": "marzo 22",
     "day": 22,
     "month": 3,
     "monthName": "marzo",
@@ -904,6 +986,7 @@
   {
     "title": "… NO DEBE HABER MÁS RESERVAS",
     "date": "03-23",
+    "dateName": "marzo 23",
     "day": 23,
     "month": 3,
     "monthName": "marzo",
@@ -915,6 +998,7 @@
   {
     "title": "ACTIVO, NO PASIVO",
     "date": "03-24",
+    "dateName": "marzo 24",
     "day": 24,
     "month": 3,
     "monthName": "marzo",
@@ -926,6 +1010,7 @@
   {
     "title": "UN CORAZÓN LLENO DE GRATITUD",
     "date": "03-25",
+    "dateName": "marzo 25",
     "day": 25,
     "month": 3,
     "monthName": "marzo",
@@ -937,6 +1022,7 @@
   {
     "title": "LA ENSEÑANZA NUNCA ACABA",
     "date": "03-26",
+    "dateName": "marzo 26",
     "day": 26,
     "month": 3,
     "monthName": "marzo",
@@ -948,6 +1034,7 @@
   {
     "title": "LAS LIBERTADES DE A.A.",
     "date": "03-27",
+    "dateName": "marzo 27",
     "day": 27,
     "month": 3,
     "monthName": "marzo",
@@ -959,6 +1046,7 @@
   {
     "title": "IGUALDAD",
     "date": "03-28",
+    "dateName": "marzo 28",
     "day": 28,
     "month": 3,
     "monthName": "marzo",
@@ -970,6 +1058,7 @@
   {
     "title": "SERVIDORES DE CONFIANZA",
     "date": "03-29",
+    "dateName": "marzo 29",
     "day": 29,
     "month": 3,
     "monthName": "marzo",
@@ -981,6 +1070,7 @@
   {
     "title": "NUESTRA CONCIENCIA DE GRUPO",
     "date": "03-30",
+    "dateName": "marzo 30",
     "day": 30,
     "month": 3,
     "monthName": "marzo",
@@ -992,6 +1082,7 @@
   {
     "title": "NADIE ME NEGÓ EL AMOR",
     "date": "03-31",
+    "dateName": "marzo 31",
     "day": 31,
     "month": 3,
     "monthName": "marzo",
@@ -1003,6 +1094,7 @@
   {
     "title": "MIRAR HACIA ADENTRO",
     "date": "04-01",
+    "dateName": "abril 1",
     "day": 1,
     "month": 4,
     "monthName": "abril",
@@ -1014,6 +1106,7 @@
   {
     "title": "FORMACIÓN DEL CARÁCTER",
     "date": "04-02",
+    "dateName": "abril 2",
     "day": 2,
     "month": 4,
     "monthName": "abril",
@@ -1025,6 +1118,7 @@
   {
     "title": "ACEPTAR QUE SOMOS HUMANOS",
     "date": "04-03",
+    "dateName": "abril 3",
     "day": 3,
     "month": 4,
     "monthName": "abril",
@@ -1036,6 +1130,7 @@
   {
     "title": "LLORAR POR LA LUNA",
     "date": "04-04",
+    "dateName": "abril 4",
     "day": 4,
     "month": 4,
     "monthName": "abril",
@@ -1047,6 +1142,7 @@
   {
     "title": "VERDADERA HERMANDAD",
     "date": "04-05",
+    "dateName": "abril 5",
     "day": 5,
     "month": 4,
     "monthName": "abril",
@@ -1058,6 +1154,7 @@
   {
     "title": "UN PROCESO PARA TODA LA VIDA",
     "date": "04-06",
+    "dateName": "abril 6",
     "day": 6,
     "month": 4,
     "monthName": "abril",
@@ -1069,6 +1166,7 @@
   {
     "title": "UN ANCHO ARCO DE GRATITUD",
     "date": "04-07",
+    "dateName": "abril 7",
     "day": 7,
     "month": 4,
     "monthName": "abril",
@@ -1080,6 +1178,7 @@
   {
     "title": "UNA MIRADA ADENTRO",
     "date": "04-08",
+    "dateName": "abril 8",
     "day": 8,
     "month": 4,
     "monthName": "abril",
@@ -1091,6 +1190,7 @@
   {
     "title": "LIBERACIÓN DEL “REY ALCOHOL”",
     "date": "04-09",
+    "dateName": "abril 9",
     "day": 9,
     "month": 4,
     "monthName": "abril",
@@ -1102,6 +1202,7 @@
   {
     "title": "MADURAR",
     "date": "04-10",
+    "dateName": "abril 10",
     "day": 10,
     "month": 4,
     "monthName": "abril",
@@ -1113,6 +1214,7 @@
   {
     "title": "UNA PALABRA PARA ELIMINAR",
     "date": "04-11",
+    "dateName": "abril 11",
     "day": 11,
     "month": 4,
     "monthName": "abril",
@@ -1124,6 +1226,7 @@
   {
     "title": "RENUNCIAR A LA DEMENCIA",
     "date": "04-12",
+    "dateName": "abril 12",
     "day": 12,
     "month": 4,
     "monthName": "abril",
@@ -1135,6 +1238,7 @@
   {
     "title": "EL FALSO CONSUELO DE LA AUTOCONMISERACIÓN",
     "date": "04-13",
+    "dateName": "abril 13",
     "day": 13,
     "month": 4,
     "monthName": "abril",
@@ -1146,6 +1250,7 @@
   {
     "title": "EL “OFENSOR NÚMERO UNO”",
     "date": "04-14",
+    "dateName": "abril 14",
     "day": 14,
     "month": 4,
     "monthName": "abril",
@@ -1157,6 +1262,7 @@
   {
     "title": "LA ESCLAVITUD DE LOS RESENTIMIENTOS…",
     "date": "04-15",
+    "dateName": "abril 15",
     "day": 15,
     "month": 4,
     "monthName": "abril",
@@ -1168,6 +1274,7 @@
   {
     "title": "LA IRA: UN “LUJO DUDOSO”",
     "date": "04-16",
+    "dateName": "abril 16",
     "day": 16,
     "month": 4,
     "monthName": "abril",
@@ -1179,6 +1286,7 @@
   {
     "title": "EL AMOR Y EL TEMOR COMO COSAS OPUESTAS",
     "date": "04-17",
+    "dateName": "abril 17",
     "day": 17,
     "month": 4,
     "monthName": "abril",
@@ -1190,6 +1298,7 @@
   {
     "title": "HONESTIDAD CON UNO MISMO",
     "date": "04-18",
+    "dateName": "abril 18",
     "day": 18,
     "month": 4,
     "monthName": "abril",
@@ -1201,6 +1310,7 @@
   {
     "title": "HERMANOS POR NUESTROS DEFECTOS",
     "date": "04-19",
+    "dateName": "abril 19",
     "day": 19,
     "month": 4,
     "monthName": "abril",
@@ -1212,6 +1322,7 @@
   {
     "title": "AUTOEXAMEN",
     "date": "04-20",
+    "dateName": "abril 20",
     "day": 20,
     "month": 4,
     "monthName": "abril",
@@ -1223,6 +1334,7 @@
   {
     "title": "CULTIVAR LA FE",
     "date": "04-21",
+    "dateName": "abril 21",
     "day": 21,
     "month": 4,
     "monthName": "abril",
@@ -1234,6 +1346,7 @@
   {
     "title": "TIERRA NUEVA… RAÍCES NUEVAS",
     "date": "04-22",
+    "dateName": "abril 22",
     "day": 22,
     "month": 4,
     "monthName": "abril",
@@ -1245,6 +1358,7 @@
   {
     "title": "A.A. NO ES UNA PANACEA",
     "date": "04-23",
+    "dateName": "abril 23",
     "day": 23,
     "month": 4,
     "monthName": "abril",
@@ -1256,6 +1370,7 @@
   {
     "title": "APRENDER A AMARNOS A NOSOTROS MISMOS",
     "date": "04-24",
+    "dateName": "abril 24",
     "day": 24,
     "month": 4,
     "monthName": "abril",
@@ -1267,6 +1382,7 @@
   {
     "title": "ENTRAR EN UNA NUEVA DIMENSIÓN",
     "date": "04-25",
+    "dateName": "abril 25",
     "day": 25,
     "month": 4,
     "monthName": "abril",
@@ -1278,6 +1394,7 @@
   {
     "title": "EL PUNTO ESENCIAL NO ES LA FELICIDAD",
     "date": "04-26",
+    "dateName": "abril 26",
     "day": 26,
     "month": 4,
     "monthName": "abril",
@@ -1289,6 +1406,7 @@
   {
     "title": "DESCUBRIMIENTOS ALEGRES",
     "date": "04-27",
+    "dateName": "abril 27",
     "day": 27,
     "month": 4,
     "monthName": "abril",
@@ -1300,6 +1418,7 @@
   {
     "title": "DOS MAGNÍFICOS CRITERIOS",
     "date": "04-28",
+    "dateName": "abril 28",
     "day": 28,
     "month": 4,
     "monthName": "abril",
@@ -1311,6 +1430,7 @@
   {
     "title": "AUTONOMÍA DE GRUPO",
     "date": "04-29",
+    "dateName": "abril 29",
     "day": 29,
     "month": 4,
     "monthName": "abril",
@@ -1322,6 +1442,7 @@
   {
     "title": "UNA GRAN PARADOJA",
     "date": "04-30",
+    "dateName": "abril 30",
     "day": 30,
     "month": 4,
     "monthName": "abril",
@@ -1333,6 +1454,7 @@
   {
     "title": "SANAR EL CORAZÓN Y LA MENTE",
     "date": "05-01",
+    "dateName": "May 1",
     "day": 1,
     "month": 5,
     "monthName": "May",
@@ -1344,6 +1466,7 @@
   {
     "title": "ALUMBRAR EL OSCURO PASADO",
     "date": "05-02",
+    "dateName": "May 2",
     "day": 2,
     "month": 5,
     "monthName": "May",
@@ -1355,6 +1478,7 @@
   {
     "title": "LIMPIEZA DE CASA",
     "date": "05-03",
+    "dateName": "May 3",
     "day": 3,
     "month": 5,
     "monthName": "May",
@@ -1366,6 +1490,7 @@
   {
     "title": "“COMPLETAMENTE SINCEROS”",
     "date": "05-04",
+    "dateName": "May 4",
     "day": 4,
     "month": 5,
     "monthName": "May",
@@ -1377,6 +1502,7 @@
   {
     "title": "EL BOSQUE Y LOS ÁRBOLES",
     "date": "05-05",
+    "dateName": "May 5",
     "day": 5,
     "month": 5,
     "monthName": "May",
@@ -1388,6 +1514,7 @@
   {
     "title": "“NO ESCONDER NADA”",
     "date": "05-06",
+    "dateName": "May 6",
     "day": 6,
     "month": 5,
     "monthName": "May",
@@ -1399,6 +1526,7 @@
   {
     "title": "RESPETO PARA OTROS",
     "date": "05-07",
+    "dateName": "May 7",
     "day": 7,
     "month": 5,
     "monthName": "May",
@@ -1410,6 +1538,7 @@
   {
     "title": "UN LUGAR DE DESCANSO",
     "date": "05-08",
+    "dateName": "May 8",
     "day": 8,
     "month": 5,
     "monthName": "May",
@@ -1421,6 +1550,7 @@
   {
     "title": "CAMINAR A TRAVÉS DEL MIEDO",
     "date": "05-09",
+    "dateName": "May 9",
     "day": 9,
     "month": 5,
     "monthName": "May",
@@ -1432,6 +1562,7 @@
   {
     "title": "LIBRE AL FIN",
     "date": "05-10",
+    "dateName": "May 10",
     "day": 10,
     "month": 5,
     "monthName": "May",
@@ -1443,6 +1574,7 @@
   {
     "title": "UNA NUEVA SENSACIÓN DE PERTENECER",
     "date": "05-11",
+    "dateName": "May 11",
     "day": 11,
     "month": 5,
     "monthName": "May",
@@ -1454,6 +1586,7 @@
   {
     "title": "EL PASADO YA PASÓ",
     "date": "05-12",
+    "dateName": "May 12",
     "day": 12,
     "month": 5,
     "monthName": "May",
@@ -1465,6 +1598,7 @@
   {
     "title": "EL CAMINO MÁS FÁCIL Y CÓMODO",
     "date": "05-13",
+    "dateName": "May 13",
     "day": 13,
     "month": 5,
     "monthName": "May",
@@ -1476,6 +1610,7 @@
   {
     "title": "ESTÁ BIEN SER “YO”",
     "date": "05-14",
+    "dateName": "May 14",
     "day": 14,
     "month": 5,
     "monthName": "May",
@@ -1487,6 +1622,7 @@
   {
     "title": "CONOCE A DIOS; CONOCE LA PAZ",
     "date": "05-15",
+    "dateName": "May 15",
     "day": 15,
     "month": 5,
     "monthName": "May",
@@ -1498,6 +1634,7 @@
   {
     "title": "NOSOTROS PERDONAMOS",
     "date": "05-16",
+    "dateName": "May 16",
     "day": 16,
     "month": 5,
     "monthName": "May",
@@ -1509,6 +1646,7 @@
   {
     "title": "… Y PERDONAR",
     "date": "05-17",
+    "dateName": "May 17",
     "day": 17,
     "month": 5,
     "monthName": "May",
@@ -1520,6 +1658,7 @@
   {
     "title": "LA LIBERTAD DE SER “YO”",
     "date": "05-18",
+    "dateName": "May 18",
     "day": 18,
     "month": 5,
     "monthName": "May",
@@ -1531,6 +1670,7 @@
   {
     "title": "DAR SIN ESPERAR NADA",
     "date": "05-19",
+    "dateName": "May 19",
     "day": 19,
     "month": 5,
     "monthName": "May",
@@ -1542,6 +1682,7 @@
   {
     "title": "UN DÍA A LA VEZ",
     "date": "05-20",
+    "dateName": "May 20",
     "day": 20,
     "month": 5,
     "monthName": "May",
@@ -1553,6 +1694,7 @@
   {
     "title": "UNA LISTA DE BENDICIONES",
     "date": "05-21",
+    "dateName": "May 21",
     "day": 21,
     "month": 5,
     "monthName": "May",
@@ -1564,6 +1706,7 @@
   {
     "title": "PRIMER PASO",
     "date": "05-22",
+    "dateName": "May 22",
     "day": 22,
     "month": 5,
     "monthName": "May",
@@ -1575,6 +1718,7 @@
   {
     "title": "SALUD ESPIRITUAL",
     "date": "05-23",
+    "dateName": "May 23",
     "day": 23,
     "month": 5,
     "monthName": "May",
@@ -1586,6 +1730,7 @@
   {
     "title": "“FELIZ, ALEGRE Y LIBRE”",
     "date": "05-24",
+    "dateName": "May 24",
     "day": 24,
     "month": 5,
     "monthName": "May",
@@ -1597,6 +1742,7 @@
   {
     "title": "GRATITUD PROGRESIVA",
     "date": "05-25",
+    "dateName": "May 25",
     "day": 25,
     "month": 5,
     "monthName": "May",
@@ -1608,6 +1754,7 @@
   {
     "title": "CONVERTIR LO NEGATIVO EN POSITIVO",
     "date": "05-26",
+    "dateName": "May 26",
     "day": 26,
     "month": 5,
     "monthName": "May",
@@ -1619,6 +1766,7 @@
   {
     "title": "SIN CULPA SENSIBLERA",
     "date": "05-27",
+    "dateName": "May 27",
     "day": 27,
     "month": 5,
     "monthName": "May",
@@ -1630,6 +1778,7 @@
   {
     "title": "LOS MISMOS DERECHOS",
     "date": "05-28",
+    "dateName": "May 28",
     "day": 28,
     "month": 5,
     "monthName": "May",
@@ -1641,6 +1790,7 @@
   {
     "title": "VERDADERA TOLERANCIA",
     "date": "05-29",
+    "dateName": "May 29",
     "day": 29,
     "month": 5,
     "monthName": "May",
@@ -1652,6 +1802,7 @@
   {
     "title": "NUESTRO OBJETIVO PRIMORDIAL",
     "date": "05-30",
+    "dateName": "May 30",
     "day": 30,
     "month": 5,
     "monthName": "May",
@@ -1663,6 +1814,7 @@
   {
     "title": "DISPOSICIÓN PARA SERVIR A OTROS",
     "date": "05-31",
+    "dateName": "May 31",
     "day": 31,
     "month": 5,
     "monthName": "May",
@@ -1674,6 +1826,7 @@
   {
     "title": "UN NUEVO PUNTO DE VISTA",
     "date": "06-01",
+    "dateName": "junio 1",
     "day": 1,
     "month": 6,
     "monthName": "junio",
@@ -1685,6 +1838,7 @@
   {
     "title": "EL SENDERO HACIA ARRIBA",
     "date": "06-02",
+    "dateName": "junio 2",
     "day": 2,
     "month": 6,
     "monthName": "junio",
@@ -1696,6 +1850,7 @@
   {
     "title": "EN ALAS Y EN UNA ORACIÓN",
     "date": "06-03",
+    "dateName": "junio 3",
     "day": 3,
     "month": 6,
     "monthName": "junio",
@@ -1707,6 +1862,7 @@
   {
     "title": "DESPRENDERSE DEL ANTIGUO YO",
     "date": "06-04",
+    "dateName": "junio 4",
     "day": 4,
     "month": 6,
     "monthName": "junio",
@@ -1718,6 +1874,7 @@
   {
     "title": "¿COMPLETAMENTE LISTO?",
     "date": "06-05",
+    "dateName": "junio 5",
     "day": 5,
     "month": 6,
     "monthName": "junio",
@@ -1729,6 +1886,7 @@
   {
     "title": "NO HACEMOS MÁS QUE TRATAR",
     "date": "06-06",
+    "dateName": "junio 6",
     "day": 6,
     "month": 6,
     "monthName": "junio",
@@ -1740,6 +1898,7 @@
   {
     "title": "ESPERANZA A LARGO PLAZO",
     "date": "06-07",
+    "dateName": "junio 7",
     "day": 7,
     "month": 6,
     "monthName": "junio",
@@ -1751,6 +1910,7 @@
   {
     "title": "DISPONERSE A CAMBIAR",
     "date": "06-08",
+    "dateName": "junio 8",
     "day": 8,
     "month": 6,
     "monthName": "junio",
@@ -1762,6 +1922,7 @@
   {
     "title": "VIVIR EN EL PRESENTE",
     "date": "06-09",
+    "dateName": "junio 9",
     "day": 9,
     "month": 6,
     "monthName": "junio",
@@ -1773,6 +1934,7 @@
   {
     "title": "¿IMPACIENTE? TRATA LA LEVITACIÓN",
     "date": "06-10",
+    "dateName": "junio 10",
     "day": 10,
     "month": 6,
     "monthName": "junio",
@@ -1784,6 +1946,7 @@
   {
     "title": "OBLIGACIONES FAMILIARES",
     "date": "06-11",
+    "dateName": "junio 11",
     "day": 11,
     "month": 6,
     "monthName": "junio",
@@ -1795,6 +1958,7 @@
   {
     "title": "FORMAR AUTÉNTICAS RELACIONES",
     "date": "06-12",
+    "dateName": "junio 12",
     "day": 12,
     "month": 6,
     "monthName": "junio",
@@ -1806,6 +1970,7 @@
   {
     "title": "VIVIR NUESTRAS REPARACIONES",
     "date": "06-13",
+    "dateName": "junio 13",
     "day": 13,
     "month": 6,
     "monthName": "junio",
@@ -1817,6 +1982,7 @@
   {
     "title": "CUANDO LAS COSAS SE PONEN DURAS",
     "date": "06-14",
+    "dateName": "junio 14",
     "day": 14,
     "month": 6,
     "monthName": "junio",
@@ -1828,6 +1994,7 @@
   {
     "title": "HACER DE A.A. TU PODER SUPERIOR",
     "date": "06-15",
+    "dateName": "junio 15",
     "day": 15,
     "month": 6,
     "monthName": "junio",
@@ -1839,6 +2006,7 @@
   {
     "title": "MENTE RECEPTIVA",
     "date": "06-16",
+    "dateName": "junio 16",
     "day": 16,
     "month": 6,
     "monthName": "junio",
@@ -1850,6 +2018,7 @@
   {
     "title": "“EN LO MÁS PROFUNDO DE NOSOTROS MISMOS",
     "date": "06-17",
+    "dateName": "junio 17",
     "day": 17,
     "month": 6,
     "monthName": "junio",
@@ -1861,6 +2030,7 @@
   {
     "title": "UNA COMUNIDAD DE LIBERTAD",
     "date": "06-18",
+    "dateName": "junio 18",
     "day": 18,
     "month": 6,
     "monthName": "junio",
@@ -1872,6 +2042,7 @@
   {
     "title": "“REGENERACIÓN A.A.”",
     "date": "06-19",
+    "dateName": "junio 19",
     "day": 19,
     "month": 6,
     "monthName": "junio",
@@ -1883,6 +2054,7 @@
   {
     "title": "LIBERACIÓN DEL TEMOR",
     "date": "06-20",
+    "dateName": "junio 20",
     "day": 20,
     "month": 6,
     "monthName": "junio",
@@ -1894,6 +2066,7 @@
   {
     "title": "TEMOR Y FE",
     "date": "06-21",
+    "dateName": "junio 21",
     "day": 21,
     "month": 6,
     "monthName": "junio",
@@ -1905,6 +2078,7 @@
   {
     "title": "HOY, SOY LIBRE",
     "date": "06-22",
+    "dateName": "junio 22",
     "day": 22,
     "month": 6,
     "monthName": "junio",
@@ -1916,6 +2090,7 @@
   {
     "title": "CONFIAR EN OTROS",
     "date": "06-23",
+    "dateName": "junio 23",
     "day": 23,
     "month": 6,
     "monthName": "junio",
@@ -1927,6 +2102,7 @@
   {
     "title": "UN JARDÍN DE INFANCIA ESPIRITUAL",
     "date": "06-24",
+    "dateName": "junio 24",
     "day": 24,
     "month": 6,
     "monthName": "junio",
@@ -1938,6 +2114,7 @@
   {
     "title": "UNA CALLE DE DOS SENTIDOS",
     "date": "06-25",
+    "dateName": "junio 25",
     "day": 25,
     "month": 6,
     "monthName": "junio",
@@ -1949,6 +2126,7 @@
   {
     "title": "UN REGALO QUE CRECE CON EL TIEMPO",
     "date": "06-26",
+    "dateName": "junio 26",
     "day": 26,
     "month": 6,
     "monthName": "junio",
@@ -1960,6 +2138,7 @@
   {
     "title": "CONFORMIDAD CON LA MANERA DE A.A.",
     "date": "06-27",
+    "dateName": "junio 27",
     "day": 27,
     "month": 6,
     "monthName": "junio",
@@ -1971,6 +2150,7 @@
   {
     "title": "LA DETERMINACIÓN DE NUESTROS FUNDADORES",
     "date": "06-28",
+    "dateName": "junio 28",
     "day": 28,
     "month": 6,
     "monthName": "junio",
@@ -1982,6 +2162,7 @@
   {
     "title": "UN EFECTO DE ONDA",
     "date": "06-29",
+    "dateName": "junio 29",
     "day": 29,
     "month": 6,
     "monthName": "junio",
@@ -1993,6 +2174,7 @@
   {
     "title": "SACRIFICIO-UNIDAD-SUPERVIVENCIA",
     "date": "06-30",
+    "dateName": "junio 30",
     "day": 30,
     "month": 6,
     "monthName": "junio",
@@ -2004,6 +2186,7 @@
   {
     "title": "LO MEJOR PARA HOY",
     "date": "07-01",
+    "dateName": "julio 1",
     "day": 1,
     "month": 7,
     "monthName": "julio",
@@ -2015,6 +2198,7 @@
   {
     "title": "EL CORAZÓN DE LA VERDADERA SOBRIEDAD",
     "date": "07-02",
+    "dateName": "julio 2",
     "day": 2,
     "month": 7,
     "monthName": "julio",
@@ -2026,6 +2210,7 @@
   {
     "title": "EXPERIENCIA: LA MEJOR MAESTRA",
     "date": "07-03",
+    "dateName": "julio 3",
     "day": 3,
     "month": 7,
     "monthName": "julio",
@@ -2037,6 +2222,7 @@
   {
     "title": "UNA FE NATURAL",
     "date": "07-04",
+    "dateName": "julio 4",
     "day": 4,
     "month": 7,
     "monthName": "julio",
@@ -2048,6 +2234,7 @@
   {
     "title": "UNA NUEVA DIRECCIÓN",
     "date": "07-05",
+    "dateName": "julio 5",
     "day": 5,
     "month": 7,
     "monthName": "julio",
@@ -2059,6 +2246,7 @@
   {
     "title": "IDENTIFICAR EL TEMOR …",
     "date": "07-06",
+    "dateName": "julio 6",
     "day": 6,
     "month": 7,
     "monthName": "julio",
@@ -2070,6 +2258,7 @@
   {
     "title": "… Y DESPRENDERSE DE ÉL",
     "date": "07-07",
+    "dateName": "julio 7",
     "day": 7,
     "month": 7,
     "monthName": "julio",
@@ -2081,6 +2270,7 @@
   {
     "title": "UNA LIBERTAD SIEMPRE CRECIENTE",
     "date": "07-08",
+    "dateName": "julio 8",
     "day": 8,
     "month": 7,
     "monthName": "julio",
@@ -2092,6 +2282,7 @@
   {
     "title": "SOY UN INSTRUMENTO",
     "date": "07-09",
+    "dateName": "julio 9",
     "day": 9,
     "month": 7,
     "monthName": "julio",
@@ -2103,6 +2294,7 @@
   {
     "title": "HACIA LA PAZ Y LA SERENIDAD",
     "date": "07-10",
+    "dateName": "julio 10",
     "day": 10,
     "month": 7,
     "monthName": "julio",
@@ -2114,6 +2306,7 @@
   {
     "title": "UN MOMENTO CRUCIAL",
     "date": "07-11",
+    "dateName": "julio 11",
     "day": 11,
     "month": 7,
     "monthName": "julio",
@@ -2125,6 +2318,7 @@
   {
     "title": "RENUNCIAR AL CENTRO DEL ESCENARIO",
     "date": "07-12",
+    "dateName": "julio 12",
     "day": 12,
     "month": 7,
     "monthName": "julio",
@@ -2136,6 +2330,7 @@
   {
     "title": "LA HUMILDAD ES UN REGALO",
     "date": "07-13",
+    "dateName": "julio 13",
     "day": 13,
     "month": 7,
     "monthName": "julio",
@@ -2147,6 +2342,7 @@
   {
     "title": "UN INGREDIENTE NUTRITIVO",
     "date": "07-14",
+    "dateName": "julio 14",
     "day": 14,
     "month": 7,
     "monthName": "julio",
@@ -2158,6 +2354,7 @@
   {
     "title": "ORGULLO",
     "date": "07-15",
+    "dateName": "julio 15",
     "day": 15,
     "month": 7,
     "monthName": "julio",
@@ -2169,6 +2366,7 @@
   {
     "title": "“UN GRADO DE HUMILDAD”",
     "date": "07-16",
+    "dateName": "julio 16",
     "day": 16,
     "month": 7,
     "monthName": "julio",
@@ -2180,6 +2378,7 @@
   {
     "title": "ENTREGA Y AUTOEXAMEN",
     "date": "07-17",
+    "dateName": "julio 17",
     "day": 17,
     "month": 7,
     "monthName": "julio",
@@ -2191,6 +2390,7 @@
   {
     "title": "AGRADECIDO POR LO QUE TENGO",
     "date": "07-18",
+    "dateName": "julio 18",
     "day": 18,
     "month": 7,
     "monthName": "julio",
@@ -2202,6 +2402,7 @@
   {
     "title": "FALSO ORGULLO",
     "date": "07-19",
+    "dateName": "julio 19",
     "day": 19,
     "month": 7,
     "monthName": "julio",
@@ -2213,6 +2414,7 @@
   {
     "title": "LIBERADOS DE DEFECTOS",
     "date": "07-20",
+    "dateName": "julio 20",
     "day": 20,
     "month": 7,
     "monthName": "julio",
@@ -2224,6 +2426,7 @@
   {
     "title": "UN DON INAPRECIABLE",
     "date": "07-21",
+    "dateName": "julio 21",
     "day": 21,
     "month": 7,
     "monthName": "julio",
@@ -2235,6 +2438,7 @@
   {
     "title": "“LO BUENO Y LO MALO”",
     "date": "07-22",
+    "dateName": "julio 22",
     "day": 22,
     "month": 7,
     "monthName": "julio",
@@ -2246,6 +2450,7 @@
   {
     "title": "LE PIDO A DIOS QUE DECIDA",
     "date": "07-23",
+    "dateName": "julio 23",
     "day": 23,
     "month": 7,
     "monthName": "julio",
@@ -2257,6 +2462,7 @@
   {
     "title": "AYUDAR A OTROS",
     "date": "07-24",
+    "dateName": "julio 24",
     "day": 24,
     "month": 7,
     "monthName": "julio",
@@ -2268,6 +2474,7 @@
   {
     "title": "AQUELLOS QUE TODAVÍA SUFREN",
     "date": "07-25",
+    "dateName": "julio 25",
     "day": 25,
     "month": 7,
     "monthName": "julio",
@@ -2279,6 +2486,7 @@
   {
     "title": "EL “VALOR” DE LA SOBRIEDAD",
     "date": "07-26",
+    "dateName": "julio 26",
     "day": 26,
     "month": 7,
     "monthName": "julio",
@@ -2290,6 +2498,7 @@
   {
     "title": "DAR LIBREMENTE",
     "date": "07-27",
+    "dateName": "julio 27",
     "day": 27,
     "month": 7,
     "monthName": "julio",
@@ -2301,6 +2510,7 @@
   {
     "title": "AQUELLOS QUE AÚN SUFREN",
     "date": "07-28",
+    "dateName": "julio 28",
     "day": 28,
     "month": 7,
     "monthName": "julio",
@@ -2312,6 +2522,7 @@
   {
     "title": "REGALOS ANÓNIMOS DE BONDAD",
     "date": "07-29",
+    "dateName": "julio 29",
     "day": 29,
     "month": 7,
     "monthName": "julio",
@@ -2323,6 +2534,7 @@
   {
     "title": "DEVOLVERLO",
     "date": "07-30",
+    "dateName": "julio 30",
     "day": 30,
     "month": 7,
     "monthName": "julio",
@@ -2334,6 +2546,7 @@
   {
     "title": "UNA ORACIÓN PARA TODAS LAS ESTACIONES",
     "date": "07-31",
+    "dateName": "julio 31",
     "day": 31,
     "month": 7,
     "monthName": "julio",
@@ -2345,6 +2558,7 @@
   {
     "title": "VIVIRLA",
     "date": "08-01",
+    "dateName": "agosto 1",
     "day": 1,
     "month": 8,
     "monthName": "agosto",
@@ -2356,6 +2570,7 @@
   {
     "title": "LLEGAMOS A ESTAR DISPUESTOS…",
     "date": "08-02",
+    "dateName": "agosto 2",
     "day": 2,
     "month": 8,
     "monthName": "agosto",
@@ -2367,6 +2582,7 @@
   {
     "title": "…SER SERVICIALES",
     "date": "08-03",
+    "dateName": "agosto 3",
     "day": 3,
     "month": 8,
     "monthName": "agosto",
@@ -2378,6 +2594,7 @@
   {
     "title": "SEMILLAS DE FE",
     "date": "08-04",
+    "dateName": "agosto 4",
     "day": 4,
     "month": 8,
     "monthName": "agosto",
@@ -2389,6 +2606,7 @@
   {
     "title": "ESCUCHAR ATENTAMENTE",
     "date": "08-05",
+    "dateName": "agosto 5",
     "day": 5,
     "month": 8,
     "monthName": "agosto",
@@ -2400,6 +2618,7 @@
   {
     "title": "ACOSADOS",
     "date": "08-06",
+    "dateName": "agosto 6",
     "day": 6,
     "month": 8,
     "monthName": "agosto",
@@ -2411,6 +2630,7 @@
   {
     "title": "“UN DESIGNIO PARA VIVIR”",
     "date": "08-07",
+    "dateName": "agosto 7",
     "day": 7,
     "month": 8,
     "monthName": "agosto",
@@ -2422,6 +2642,7 @@
   {
     "title": "“HICIMOS UNA LISTA…”",
     "date": "08-08",
+    "dateName": "agosto 8",
     "day": 8,
     "month": 8,
     "monthName": "agosto",
@@ -2433,6 +2654,7 @@
   {
     "title": "“… DE TODAS AQUELLAS PERSONAS…”",
     "date": "08-09",
+    "dateName": "agosto 9",
     "day": 9,
     "month": 8,
     "monthName": "agosto",
@@ -2444,6 +2666,7 @@
   {
     "title": "REDOBLAR NUESTROS ESFUERZOS",
     "date": "08-10",
+    "dateName": "agosto 10",
     "day": 10,
     "month": 8,
     "monthName": "agosto",
@@ -2455,6 +2678,7 @@
   {
     "title": "SACAR EL “VIDRIO MOLIDO”",
     "date": "08-11",
+    "dateName": "agosto 11",
     "day": 11,
     "month": 8,
     "monthName": "agosto",
@@ -2466,6 +2690,7 @@
   {
     "title": "UNA MIRADA HACIA ATRÁS",
     "date": "08-12",
+    "dateName": "agosto 12",
     "day": 12,
     "month": 8,
     "monthName": "agosto",
@@ -2477,6 +2702,7 @@
   {
     "title": "TODO DE UN GOLPE",
     "date": "08-13",
+    "dateName": "agosto 13",
     "day": 13,
     "month": 8,
     "monthName": "agosto",
@@ -2488,6 +2714,7 @@
   {
     "title": "REPARAR EL DAÑO",
     "date": "08-14",
+    "dateName": "agosto 14",
     "day": 14,
     "month": 8,
     "monthName": "agosto",
@@ -2499,6 +2726,7 @@
   {
     "title": "¿NO HICIMOS DAÑO A NADIE?",
     "date": "08-15",
+    "dateName": "agosto 15",
     "day": 15,
     "month": 8,
     "monthName": "agosto",
@@ -2510,6 +2738,7 @@
   {
     "title": "“YO HABÍA DESAPARECIDO”",
     "date": "08-16",
+    "dateName": "agosto 16",
     "day": 16,
     "month": 8,
     "monthName": "agosto",
@@ -2521,6 +2750,7 @@
   {
     "title": "CORREGIR EL DAÑO",
     "date": "08-17",
+    "dateName": "agosto 17",
     "day": 17,
     "month": 8,
     "monthName": "agosto",
@@ -2532,6 +2762,7 @@
   {
     "title": "MEJORARSE",
     "date": "08-18",
+    "dateName": "agosto 18",
     "day": 18,
     "month": 8,
     "monthName": "agosto",
@@ -2543,6 +2774,7 @@
   {
     "title": "UN MARCO DE REFERENCIA",
     "date": "08-19",
+    "dateName": "agosto 19",
     "day": 19,
     "month": 8,
     "monthName": "agosto",
@@ -2554,6 +2786,7 @@
   {
     "title": "HACIA LA LIBERTAD EMOCIONAL",
     "date": "08-20",
+    "dateName": "agosto 20",
     "day": 20,
     "month": 8,
     "monthName": "agosto",
@@ -2565,6 +2798,7 @@
   {
     "title": "SOLAMENTE TRATAMOS",
     "date": "08-21",
+    "dateName": "agosto 21",
     "day": 21,
     "month": 8,
     "monthName": "agosto",
@@ -2576,6 +2810,7 @@
   {
     "title": "BUSCAR LA ESTABILIDAD EMOCIONAL",
     "date": "08-22",
+    "dateName": "agosto 22",
     "day": 22,
     "month": 8,
     "monthName": "agosto",
@@ -2587,6 +2822,7 @@
   {
     "title": "LLEVAR EL MENSAJE AL HOGAR",
     "date": "08-23",
+    "dateName": "agosto 23",
     "day": 23,
     "month": 8,
     "monthName": "agosto",
@@ -2598,6 +2834,7 @@
   {
     "title": "UN ENIGMA QUE DA RESULTADOS",
     "date": "08-24",
+    "dateName": "agosto 24",
     "day": 24,
     "month": 8,
     "monthName": "agosto",
@@ -2609,6 +2846,7 @@
   {
     "title": "EL DON DE VINCULARSE",
     "date": "08-25",
+    "dateName": "agosto 25",
     "day": 25,
     "month": 8,
     "monthName": "agosto",
@@ -2620,6 +2858,7 @@
   {
     "title": "ENTREGARLO",
     "date": "08-26",
+    "dateName": "agosto 26",
     "day": 26,
     "month": 8,
     "monthName": "agosto",
@@ -2631,6 +2870,7 @@
   {
     "title": "CENTRAR NUESTROS PENSAMIENTOS",
     "date": "08-27",
+    "dateName": "agosto 27",
     "day": 27,
     "month": 8,
     "monthName": "agosto",
@@ -2642,6 +2882,7 @@
   {
     "title": "ALIGERAR LA CARGA",
     "date": "08-28",
+    "dateName": "agosto 28",
     "day": 28,
     "month": 8,
     "monthName": "agosto",
@@ -2653,6 +2894,7 @@
   {
     "title": "ESCOJO EL ANONIMATO",
     "date": "08-29",
+    "dateName": "agosto 29",
     "day": 29,
     "month": 8,
     "monthName": "agosto",
@@ -2664,6 +2906,7 @@
   {
     "title": "EL ÚNICO REQUISITO",
     "date": "08-30",
+    "dateName": "agosto 30",
     "day": 30,
     "month": 8,
     "monthName": "agosto",
@@ -2675,6 +2918,7 @@
   {
     "title": "UN PROGRAMA ÚNICO",
     "date": "08-31",
+    "dateName": "agosto 31",
     "day": 31,
     "month": 8,
     "monthName": "agosto",
@@ -2686,6 +2930,7 @@
   {
     "title": "ESTAR DISPUESTO A CRECER",
     "date": "09-01",
+    "dateName": "septiembre 1",
     "day": 1,
     "month": 9,
     "monthName": "septiembre",
@@ -2697,6 +2942,7 @@
   {
     "title": "ENCONTRAR UNA RAZÓN PARA CREER",
     "date": "09-02",
+    "dateName": "septiembre 2",
     "day": 2,
     "month": 9,
     "monthName": "septiembre",
@@ -2708,6 +2954,7 @@
   {
     "title": "CONSTRUIR UNA NUEVA VIDA",
     "date": "09-03",
+    "dateName": "septiembre 3",
     "day": 3,
     "month": 9,
     "monthName": "septiembre",
@@ -2719,6 +2966,7 @@
   {
     "title": "RECONSTRUCCIÓN",
     "date": "09-04",
+    "dateName": "septiembre 4",
     "day": 4,
     "month": 9,
     "monthName": "septiembre",
@@ -2730,6 +2978,7 @@
   {
     "title": "EQUILIBRIO EMOCIONAL",
     "date": "09-05",
+    "dateName": "septiembre 5",
     "day": 5,
     "month": 9,
     "monthName": "septiembre",
@@ -2741,6 +2990,7 @@
   {
     "title": "ELIMINAR LAS AMENAZAS A LA SOBRIEDAD",
     "date": "09-06",
+    "dateName": "septiembre 6",
     "day": 6,
     "month": 9,
     "monthName": "septiembre",
@@ -2752,6 +3002,7 @@
   {
     "title": "“NUESTRO LADO DE LA CALLE”",
     "date": "09-07",
+    "dateName": "septiembre 7",
     "day": 7,
     "month": 9,
     "monthName": "septiembre",
@@ -2763,6 +3014,7 @@
   {
     "title": "“PEDIMOS SU PROTECCIÓN”",
     "date": "09-08",
+    "dateName": "septiembre 8",
     "day": 8,
     "month": 9,
     "monthName": "septiembre",
@@ -2774,6 +3026,7 @@
   {
     "title": "ABRIR NUEVAS PUERTAS",
     "date": "09-09",
+    "dateName": "septiembre 9",
     "day": 9,
     "month": 9,
     "monthName": "septiembre",
@@ -2785,6 +3038,7 @@
   {
     "title": "¿RECUPERACIÓN “POR PODER”?",
     "date": "09-10",
+    "dateName": "septiembre 10",
     "day": 10,
     "month": 9,
     "monthName": "septiembre",
@@ -2796,6 +3050,7 @@
   {
     "title": "HACER ENMIENDAS",
     "date": "09-11",
+    "dateName": "septiembre 11",
     "day": 11,
     "month": 9,
     "monthName": "septiembre",
@@ -2807,6 +3062,7 @@
   {
     "title": "YO SOY RESPONSABLE",
     "date": "09-12",
+    "dateName": "septiembre 12",
     "day": 12,
     "month": 9,
     "monthName": "septiembre",
@@ -2818,6 +3074,7 @@
   {
     "title": "REPARAR EL DAÑO",
     "date": "09-13",
+    "dateName": "septiembre 13",
     "day": 13,
     "month": 9,
     "monthName": "septiembre",
@@ -2829,6 +3086,7 @@
   {
     "title": "TRANQUILIDAD DEL ESPÍRITU",
     "date": "09-14",
+    "dateName": "septiembre 14",
     "day": 14,
     "month": 9,
     "monthName": "septiembre",
@@ -2840,6 +3098,7 @@
   {
     "title": "UNA VIDA NUEVA",
     "date": "09-15",
+    "dateName": "septiembre 15",
     "day": 15,
     "month": 9,
     "monthName": "septiembre",
@@ -2851,6 +3110,7 @@
   {
     "title": "UNIDOS VENCEREMOS O PERECEREMOS",
     "date": "09-16",
+    "dateName": "septiembre 16",
     "day": 16,
     "month": 9,
     "monthName": "septiembre",
@@ -2862,6 +3122,7 @@
   {
     "title": "LIBERACIÓN DEL TEMOR",
     "date": "09-17",
+    "dateName": "septiembre 17",
     "day": 17,
     "month": 9,
     "monthName": "septiembre",
@@ -2873,6 +3134,7 @@
   {
     "title": "RECUPERADO POR EL AMOR",
     "date": "09-18",
+    "dateName": "septiembre 18",
     "day": 18,
     "month": 9,
     "monthName": "septiembre",
@@ -2884,6 +3146,7 @@
   {
     "title": "ACEPTACIÓN",
     "date": "09-19",
+    "dateName": "septiembre 19",
     "day": 19,
     "month": 9,
     "monthName": "septiembre",
@@ -2895,6 +3158,7 @@
   {
     "title": "P.S. COMO GUÍA",
     "date": "09-20",
+    "dateName": "septiembre 20",
     "day": 20,
     "month": 9,
     "monthName": "septiembre",
@@ -2906,6 +3170,7 @@
   {
     "title": "LA ÚLTIMA PROMESA",
     "date": "09-21",
+    "dateName": "septiembre 21",
     "day": 21,
     "month": 9,
     "monthName": "septiembre",
@@ -2917,6 +3182,7 @@
   {
     "title": "UN “FILÓN INAGOTABLE”",
     "date": "09-22",
+    "dateName": "septiembre 22",
     "day": 22,
     "month": 9,
     "monthName": "septiembre",
@@ -2928,6 +3194,7 @@
   {
     "title": "“YO ERA UNA EXCEPCIÓN”",
     "date": "09-23",
+    "dateName": "septiembre 23",
     "day": 23,
     "month": 9,
     "monthName": "septiembre",
@@ -2939,6 +3206,7 @@
   {
     "title": "VIGILANCIA",
     "date": "09-24",
+    "dateName": "septiembre 24",
     "day": 24,
     "month": 9,
     "monthName": "septiembre",
@@ -2950,6 +3218,7 @@
   {
     "title": "LO PRIMERO ES LO PRIMERO",
     "date": "09-25",
+    "dateName": "septiembre 25",
     "day": 25,
     "month": 9,
     "monthName": "septiembre",
@@ -2961,6 +3230,7 @@
   {
     "title": "NUESTROS HIJOS",
     "date": "09-26",
+    "dateName": "septiembre 26",
     "day": 26,
     "month": 9,
     "monthName": "septiembre",
@@ -2972,6 +3242,7 @@
   {
     "title": "SIN RESERVAS",
     "date": "09-27",
+    "dateName": "septiembre 27",
     "day": 27,
     "month": 9,
     "monthName": "septiembre",
@@ -2983,6 +3254,7 @@
   {
     "title": "AMOR SIN CONDICIONES",
     "date": "09-28",
+    "dateName": "septiembre 28",
     "day": 28,
     "month": 9,
     "monthName": "septiembre",
@@ -2994,6 +3266,7 @@
   {
     "title": "EXACTAMENTE IGUALES",
     "date": "09-29",
+    "dateName": "septiembre 29",
     "day": 29,
     "month": 9,
     "monthName": "septiembre",
@@ -3005,6 +3278,7 @@
   {
     "title": "EL CÍRCULO Y EL TRIÁNGULO",
     "date": "09-30",
+    "dateName": "septiembre 30",
     "day": 30,
     "month": 9,
     "monthName": "septiembre",
@@ -3016,6 +3290,7 @@
   {
     "title": "PARA NO DORMIRME EN LOS LAURELES",
     "date": "10-01",
+    "dateName": "octubre 1",
     "day": 1,
     "month": 10,
     "monthName": "octubre",
@@ -3027,6 +3302,7 @@
   {
     "title": "“LA PRUEBA DEL ÁCIDO”",
     "date": "10-02",
+    "dateName": "octubre 2",
     "day": 2,
     "month": 10,
     "monthName": "octubre",
@@ -3038,6 +3314,7 @@
   {
     "title": "SERENIDAD DESPUÉS DE LA TORMENTA",
     "date": "10-03",
+    "dateName": "octubre 3",
     "day": 3,
     "month": 10,
     "monthName": "octubre",
@@ -3049,6 +3326,7 @@
   {
     "title": "UNA PODA NECESARIA",
     "date": "10-04",
+    "dateName": "octubre 4",
     "day": 4,
     "month": 10,
     "monthName": "octubre",
@@ -3060,6 +3338,7 @@
   {
     "title": "EQUIPAJE DEL AYER",
     "date": "10-05",
+    "dateName": "octubre 5",
     "day": 5,
     "month": 10,
     "monthName": "octubre",
@@ -3071,6 +3350,7 @@
   {
     "title": "ENFRENTARNOS A NOSOTROS MISMOS",
     "date": "10-06",
+    "dateName": "octubre 6",
     "day": 6,
     "month": 10,
     "monthName": "octubre",
@@ -3082,6 +3362,7 @@
   {
     "title": "CONTROL DIARIO",
     "date": "10-07",
+    "dateName": "octubre 7",
     "day": 7,
     "month": 10,
     "monthName": "octubre",
@@ -3093,6 +3374,7 @@
   {
     "title": "INVENTARIO DIARIO",
     "date": "10-08",
+    "dateName": "octubre 8",
     "day": 8,
     "month": 10,
     "monthName": "octubre",
@@ -3104,6 +3386,7 @@
   {
     "title": "UN AXIOMA ESPIRITUAL",
     "date": "10-09",
+    "dateName": "octubre 9",
     "day": 9,
     "month": 10,
     "monthName": "octubre",
@@ -3115,6 +3398,7 @@
   {
     "title": "COMPONERME A MÍ, NO A TI",
     "date": "10-10",
+    "dateName": "octubre 10",
     "day": 10,
     "month": 10,
     "monthName": "octubre",
@@ -3126,6 +3410,7 @@
   {
     "title": "AUTODISCIPLINA",
     "date": "10-11",
+    "dateName": "octubre 11",
     "day": 11,
     "month": 10,
     "monthName": "octubre",
@@ -3137,6 +3422,7 @@
   {
     "title": "REFRENAR LA PRECIPITACIÓN",
     "date": "10-12",
+    "dateName": "octubre 12",
     "day": 12,
     "month": 10,
     "monthName": "octubre",
@@ -3148,6 +3434,7 @@
   {
     "title": "INVENTARIOS ASIDUOS",
     "date": "10-13",
+    "dateName": "octubre 13",
     "day": 13,
     "month": 10,
     "monthName": "octubre",
@@ -3159,6 +3446,7 @@
   {
     "title": "UN PROGRAMA PARA VIVIR",
     "date": "10-14",
+    "dateName": "octubre 14",
     "day": 14,
     "month": 10,
     "monthName": "octubre",
@@ -3170,6 +3458,7 @@
   {
     "title": "MI INVENTARIO, NO EL TUYO",
     "date": "10-15",
+    "dateName": "octubre 15",
     "day": 15,
     "month": 10,
     "monthName": "octubre",
@@ -3181,6 +3470,7 @@
   {
     "title": "DÍA TRAS DÍA",
     "date": "10-16",
+    "dateName": "octubre 16",
     "day": 16,
     "month": 10,
     "monthName": "octubre",
@@ -3192,6 +3482,7 @@
   {
     "title": "UN REAJUSTE DIARIO",
     "date": "10-17",
+    "dateName": "octubre 17",
     "day": 17,
     "month": 10,
     "monthName": "octubre",
@@ -3203,6 +3494,7 @@
   {
     "title": "UNA MENTE RECEPTIVA",
     "date": "10-18",
+    "dateName": "octubre 18",
     "day": 18,
     "month": 10,
     "monthName": "octubre",
@@ -3214,6 +3506,7 @@
   {
     "title": "FUNDAMENTO PRINCIPAL DE A.A.",
     "date": "10-19",
+    "dateName": "octubre 19",
     "day": 19,
     "month": 10,
     "monthName": "octubre",
@@ -3225,6 +3518,7 @@
   {
     "title": "CONSUELO PARA LA CONFUSIÓN",
     "date": "10-20",
+    "dateName": "octubre 20",
     "day": 20,
     "month": 10,
     "monthName": "octubre",
@@ -3236,6 +3530,7 @@
   {
     "title": "NADA CRECE EN LA OSCURIDAD",
     "date": "10-21",
+    "dateName": "octubre 21",
     "day": 21,
     "month": 10,
     "monthName": "octubre",
@@ -3247,6 +3542,7 @@
   {
     "title": "VERDADERA TOLERANCIA",
     "date": "10-22",
+    "dateName": "octubre 22",
     "day": 22,
     "month": 10,
     "monthName": "octubre",
@@ -3258,6 +3554,7 @@
   {
     "title": "LO QUE SABEMOS MEJOR",
     "date": "10-23",
+    "dateName": "octubre 23",
     "day": 23,
     "month": 10,
     "monthName": "octubre",
@@ -3269,6 +3566,7 @@
   {
     "title": "“POR FE Y POR OBRAS”",
     "date": "10-24",
+    "dateName": "octubre 24",
     "day": 24,
     "month": 10,
     "monthName": "octubre",
@@ -3280,6 +3578,7 @@
   {
     "title": "EL LATIDO DEL CORAZÓN DE A.A.",
     "date": "10-25",
+    "dateName": "octubre 25",
     "day": 25,
     "month": 10,
     "monthName": "octubre",
@@ -3291,6 +3590,7 @@
   {
     "title": "UNA AUTORIDAD FUNDAMENTAL",
     "date": "10-26",
+    "dateName": "octubre 26",
     "day": 26,
     "month": 10,
     "monthName": "octubre",
@@ -3302,6 +3602,7 @@
   {
     "title": "COMPARTIMIENTO MUNDIAL",
     "date": "10-27",
+    "dateName": "octubre 27",
     "day": 27,
     "month": 10,
     "monthName": "octubre",
@@ -3313,6 +3614,7 @@
   {
     "title": "UNA TRADICIÓN ININTERRUMPIDA",
     "date": "10-28",
+    "dateName": "octubre 28",
     "day": 28,
     "month": 10,
     "monthName": "octubre",
@@ -3324,6 +3626,7 @@
   {
     "title": "NUESTRA SUPERVIVENCIA",
     "date": "10-29",
+    "dateName": "octubre 29",
     "day": 29,
     "month": 10,
     "monthName": "octubre",
@@ -3335,6 +3638,7 @@
   {
     "title": "VIVE Y DEJA VIVIR",
     "date": "10-30",
+    "dateName": "octubre 30",
     "day": 30,
     "month": 10,
     "monthName": "octubre",
@@ -3346,6 +3650,7 @@
   {
     "title": "EVITAR LAS CONTROVERSIAS",
     "date": "10-31",
+    "dateName": "octubre 31",
     "day": 31,
     "month": 10,
     "monthName": "octubre",
@@ -3357,6 +3662,7 @@
   {
     "title": "NO PUEDO CAMBIAR EL VIENTO",
     "date": "11-01",
+    "dateName": "noviembre 1",
     "day": 1,
     "month": 11,
     "monthName": "noviembre",
@@ -3368,6 +3674,7 @@
   {
     "title": "MANTENER A FLOTE EL OPTIMISMO",
     "date": "11-02",
+    "dateName": "noviembre 2",
     "day": 2,
     "month": 11,
     "monthName": "noviembre",
@@ -3379,6 +3686,7 @@
   {
     "title": "ENFOCAR Y ESCUCHAR",
     "date": "11-03",
+    "dateName": "noviembre 3",
     "day": 3,
     "month": 11,
     "monthName": "noviembre",
@@ -3390,6 +3698,7 @@
   {
     "title": "UNA DISCIPLINA DIARIA",
     "date": "11-04",
+    "dateName": "noviembre 4",
     "day": 4,
     "month": 11,
     "monthName": "noviembre",
@@ -3401,6 +3710,7 @@
   {
     "title": "“LA CALIDAD DE LA FE”",
     "date": "11-05",
+    "dateName": "noviembre 5",
     "day": 5,
     "month": 11,
     "monthName": "noviembre",
@@ -3412,6 +3722,7 @@
   {
     "title": "IR CON LA CORRIENTE",
     "date": "11-06",
+    "dateName": "noviembre 6",
     "day": 6,
     "month": 11,
     "monthName": "noviembre",
@@ -3423,6 +3734,7 @@
   {
     "title": "DESPRÉNDETE Y DÉJASELO A DIOS",
     "date": "11-07",
+    "dateName": "noviembre 7",
     "day": 7,
     "month": 11,
     "monthName": "noviembre",
@@ -3434,6 +3746,7 @@
   {
     "title": "UNA AVENTURA INDIVIDUAL",
     "date": "11-08",
+    "dateName": "noviembre 8",
     "day": 8,
     "month": 11,
     "monthName": "noviembre",
@@ -3445,6 +3758,7 @@
   {
     "title": "UN PASO HACIA LA LUZ",
     "date": "11-09",
+    "dateName": "noviembre 9",
     "day": 9,
     "month": 11,
     "monthName": "noviembre",
@@ -3456,6 +3770,7 @@
   {
     "title": "UNA SENSACIÓN DE PERTENECER",
     "date": "11-10",
+    "dateName": "noviembre 10",
     "day": 10,
     "month": 11,
     "monthName": "noviembre",
@@ -3467,6 +3782,7 @@
   {
     "title": "ACEPTARSE A SÍ MISMO",
     "date": "11-11",
+    "dateName": "noviembre 11",
     "day": 11,
     "month": 11,
     "monthName": "noviembre",
@@ -3478,6 +3794,7 @@
   {
     "title": "PENSAMIENTOS MATUTINOS",
     "date": "11-12",
+    "dateName": "noviembre 12",
     "day": 12,
     "month": 11,
     "monthName": "noviembre",
@@ -3489,6 +3806,7 @@
   {
     "title": "MIRAR HACIA FUERA",
     "date": "11-13",
+    "dateName": "noviembre 13",
     "day": 13,
     "month": 11,
     "monthName": "noviembre",
@@ -3500,6 +3818,7 @@
   {
     "title": "INTUICIÓN E INSPIRACIÓN",
     "date": "11-14",
+    "dateName": "noviembre 14",
     "day": 14,
     "month": 11,
     "monthName": "noviembre",
@@ -3511,6 +3830,7 @@
   {
     "title": "SUSTENTO VITAL",
     "date": "11-15",
+    "dateName": "noviembre 15",
     "day": 15,
     "month": 11,
     "monthName": "noviembre",
@@ -3522,6 +3842,7 @@
   {
     "title": "UNA SUSPENSIÓN DIARIA",
     "date": "11-16",
+    "dateName": "noviembre 16",
     "day": 16,
     "month": 11,
     "monthName": "noviembre",
@@ -3533,6 +3854,7 @@
   {
     "title": "SUPERAR LA SOLEDAD",
     "date": "11-17",
+    "dateName": "noviembre 17",
     "day": 17,
     "month": 11,
     "monthName": "noviembre",
@@ -3544,6 +3866,7 @@
   {
     "title": "UNA RED DE SEGURIDAD",
     "date": "11-18",
+    "dateName": "noviembre 18",
     "day": 18,
     "month": 11,
     "monthName": "noviembre",
@@ -3555,6 +3878,7 @@
   {
     "title": "“IBA EMPEORÁNDOME RÁPIDAMENTE”",
     "date": "11-19",
+    "dateName": "noviembre 19",
     "day": 19,
     "month": 11,
     "monthName": "noviembre",
@@ -3566,6 +3890,7 @@
   {
     "title": "“TU VOLUNTAD, NO LA MÍA”",
     "date": "11-20",
+    "dateName": "noviembre 20",
     "day": 20,
     "month": 11,
     "monthName": "noviembre",
@@ -3577,6 +3902,7 @@
   {
     "title": "UNA ORACIÓN CLÁSICA",
     "date": "11-21",
+    "dateName": "noviembre 21",
     "day": 21,
     "month": 11,
     "monthName": "noviembre",
@@ -3588,6 +3914,7 @@
   {
     "title": "SOLAMENTE DOS PECADOS",
     "date": "11-22",
+    "dateName": "noviembre 22",
     "day": 22,
     "month": 11,
     "monthName": "noviembre",
@@ -3599,6 +3926,7 @@
   {
     "title": "“LEVANTA LA MIRADA HACIA LA LUZ”",
     "date": "11-23",
+    "dateName": "noviembre 23",
     "day": 23,
     "month": 11,
     "monthName": "noviembre",
@@ -3610,6 +3938,7 @@
   {
     "title": "UNA BÚSQUEDA UNIVERSAL",
     "date": "11-24",
+    "dateName": "noviembre 24",
     "day": 24,
     "month": 11,
     "monthName": "noviembre",
@@ -3621,6 +3950,7 @@
   {
     "title": "UNA PODEROSA TRADICIÓN",
     "date": "11-25",
+    "dateName": "noviembre 25",
     "day": 25,
     "month": 11,
     "monthName": "noviembre",
@@ -3632,6 +3962,7 @@
   {
     "title": "LOS PELIGROS DE LA PUBLICIDAD",
     "date": "11-26",
+    "dateName": "noviembre 26",
     "day": 26,
     "month": 11,
     "monthName": "noviembre",
@@ -3643,6 +3974,7 @@
   {
     "title": "EL PODER DE LA ATRACCIÓN",
     "date": "11-27",
+    "dateName": "noviembre 27",
     "day": 27,
     "month": 11,
     "monthName": "noviembre",
@@ -3654,6 +3986,7 @@
   {
     "title": "ATRACCIÓN, NO PROMOCIÓN",
     "date": "11-28",
+    "dateName": "noviembre 28",
     "day": 28,
     "month": 11,
     "monthName": "noviembre",
@@ -3665,6 +3998,7 @@
   {
     "title": "“GUARDIANES ACTIVOS”",
     "date": "11-29",
+    "dateName": "noviembre 29",
     "day": 29,
     "month": 11,
     "monthName": "noviembre",
@@ -3676,6 +4010,7 @@
   {
     "title": "PROTECCIÓN PARA TODOS",
     "date": "11-30",
+    "dateName": "noviembre 30",
     "day": 30,
     "month": 11,
     "monthName": "noviembre",
@@ -3687,6 +4022,7 @@
   {
     "title": "PASOS “SUGERIDOS”",
     "date": "12-01",
+    "dateName": "diciembre 1",
     "day": 1,
     "month": 12,
     "monthName": "diciembre",
@@ -3698,6 +4034,7 @@
   {
     "title": "SERENIDAD",
     "date": "12-02",
+    "dateName": "diciembre 2",
     "day": 2,
     "month": 12,
     "monthName": "diciembre",
@@ -3709,6 +4046,7 @@
   {
     "title": "EN TODOS NUESTROS ASUNTOS",
     "date": "12-03",
+    "dateName": "diciembre 3",
     "day": 3,
     "month": 12,
     "monthName": "diciembre",
@@ -3720,6 +4058,7 @@
   {
     "title": "EN ACCIÓN",
     "date": "12-04",
+    "dateName": "diciembre 4",
     "day": 4,
     "month": 12,
     "monthName": "diciembre",
@@ -3731,6 +4070,7 @@
   {
     "title": "UN NUEVO ESTADO DE CONCIENCIA",
     "date": "12-05",
+    "dateName": "diciembre 5",
     "day": 5,
     "month": 12,
     "monthName": "diciembre",
@@ -3742,6 +4082,7 @@
   {
     "title": "CUANDO PIERDO LAS ESPERANZAS",
     "date": "12-06",
+    "dateName": "diciembre 6",
     "day": 6,
     "month": 12,
     "monthName": "diciembre",
@@ -3753,6 +4094,7 @@
   {
     "title": "VERDADERA AMBICIÓN",
     "date": "12-07",
+    "dateName": "diciembre 7",
     "day": 7,
     "month": 12,
     "monthName": "diciembre",
@@ -3764,6 +4106,7 @@
   {
     "title": "SERVICIO",
     "date": "12-08",
+    "dateName": "diciembre 8",
     "day": 8,
     "month": 12,
     "monthName": "diciembre",
@@ -3775,6 +4118,7 @@
   {
     "title": "AMOR SIN PRECIO",
     "date": "12-09",
+    "dateName": "diciembre 9",
     "day": 9,
     "month": 12,
     "monthName": "diciembre",
@@ -3786,6 +4130,7 @@
   {
     "title": "LLEVAR EL MENSAJE",
     "date": "12-10",
+    "dateName": "diciembre 10",
     "day": 10,
     "month": 12,
     "monthName": "diciembre",
@@ -3797,6 +4142,7 @@
   {
     "title": "“UNA VERDADERA HUMILDAD”",
     "date": "12-11",
+    "dateName": "diciembre 11",
     "day": 11,
     "month": 12,
     "monthName": "diciembre",
@@ -3808,6 +4154,7 @@
   {
     "title": "UNA SOLUCIÓN COMÚN",
     "date": "12-12",
+    "dateName": "diciembre 12",
     "day": 12,
     "month": 12,
     "monthName": "diciembre",
@@ -3819,6 +4166,7 @@
   {
     "title": "PENSAR EN OTROS",
     "date": "12-13",
+    "dateName": "diciembre 13",
     "day": 13,
     "month": 12,
     "monthName": "diciembre",
@@ -3830,6 +4178,7 @@
   {
     "title": "LLEGAR AL ALCOHÓLICO",
     "date": "12-14",
+    "dateName": "diciembre 14",
     "day": 14,
     "month": 12,
     "monthName": "diciembre",
@@ -3841,6 +4190,7 @@
   {
     "title": "HACER CUALQUIER COSA PARA AYUDAR",
     "date": "12-15",
+    "dateName": "diciembre 15",
     "day": 15,
     "month": 12,
     "monthName": "diciembre",
@@ -3852,6 +4202,7 @@
   {
     "title": "COMPAÑEROS DE RECUPERACIÓN",
     "date": "12-16",
+    "dateName": "diciembre 16",
     "day": 16,
     "month": 12,
     "monthName": "diciembre",
@@ -3863,6 +4214,7 @@
   {
     "title": "UNA RECOMPENSA INAPRECIABLE",
     "date": "12-17",
+    "dateName": "diciembre 17",
     "day": 17,
     "month": 12,
     "monthName": "diciembre",
@@ -3874,6 +4226,7 @@
   {
     "title": "HONESTIDAD CON LOS RECIÉN LLEGADOS",
     "date": "12-18",
+    "dateName": "diciembre 18",
     "day": 18,
     "month": 12,
     "monthName": "diciembre",
@@ -3885,6 +4238,7 @@
   {
     "title": "COMPRENDER LA ENFERMEDAD",
     "date": "12-19",
+    "dateName": "diciembre 19",
     "day": 19,
     "month": 12,
     "monthName": "diciembre",
@@ -3896,6 +4250,7 @@
   {
     "title": "LAS RECOMPENSAS DE DAR",
     "date": "12-20",
+    "dateName": "diciembre 20",
     "day": 20,
     "month": 12,
     "monthName": "diciembre",
@@ -3907,6 +4262,7 @@
   {
     "title": "ESCUCHA, COMPARTE Y ORA",
     "date": "12-21",
+    "dateName": "diciembre 21",
     "day": 21,
     "month": 12,
     "monthName": "diciembre",
@@ -3918,6 +4274,7 @@
   {
     "title": "PRINCIPIOS, NO PERSONALIDADES",
     "date": "12-22",
+    "dateName": "diciembre 22",
     "day": 22,
     "month": 12,
     "monthName": "diciembre",
@@ -3929,6 +4286,7 @@
   {
     "title": "RECUPERACIÓN, UNIDAD, SERVICIO",
     "date": "12-23",
+    "dateName": "diciembre 23",
     "day": 23,
     "month": 12,
     "monthName": "diciembre",
@@ -3940,6 +4298,7 @@
   {
     "title": "UNA “SANA Y FELIZ UTILIDAD”",
     "date": "12-24",
+    "dateName": "diciembre 24",
     "day": 24,
     "month": 12,
     "monthName": "diciembre",
@@ -3951,6 +4310,7 @@
   {
     "title": "EN PAZ CON LA VIDA",
     "date": "12-25",
+    "dateName": "diciembre 25",
     "day": 25,
     "month": 12,
     "monthName": "diciembre",
@@ -3962,6 +4322,7 @@
   {
     "title": "ACEPTAR ÉXITOS O FRACASOS",
     "date": "12-26",
+    "dateName": "diciembre 26",
     "day": 26,
     "month": 12,
     "monthName": "diciembre",
@@ -3973,6 +4334,7 @@
   {
     "title": "RESOLVER LOS PROBLEMAS",
     "date": "12-27",
+    "dateName": "diciembre 27",
     "day": 27,
     "month": 12,
     "monthName": "diciembre",
@@ -3984,6 +4346,7 @@
   {
     "title": "PREPÁRATE Y PRESÉNTATE",
     "date": "12-28",
+    "dateName": "diciembre 28",
     "day": 28,
     "month": 12,
     "monthName": "diciembre",
@@ -3995,6 +4358,7 @@
   {
     "title": "LA ALEGRÍA DE VIVIR",
     "date": "12-29",
+    "dateName": "diciembre 29",
     "day": 29,
     "month": 12,
     "monthName": "diciembre",
@@ -4006,6 +4370,7 @@
   {
     "title": "ANONIMATO",
     "date": "12-30",
+    "dateName": "diciembre 30",
     "day": 30,
     "month": 12,
     "monthName": "diciembre",
@@ -4017,6 +4382,7 @@
   {
     "title": "RESOLUCIONES DIARIAS",
     "date": "12-31",
+    "dateName": "diciembre 31",
     "day": 31,
     "month": 12,
     "monthName": "diciembre",

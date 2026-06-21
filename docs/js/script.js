@@ -2,9 +2,11 @@ const LANGUAGES = [
   { code: 'en', label: 'EN' },
   { code: 'es', label: 'ES' },
   { code: 'fr', label: 'FR' },
+  { code: 'ja', label: 'JA' },
 ];
 
 let currentLang = localStorage.getItem('aa-lang') || 'en';
+document.documentElement.lang = currentLang;
 let currentDate = parseDateParam() || new Date();
 let firstLoad = true;
 let pendingAnimEnd = null;
@@ -21,6 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
       if (lang.code === currentLang) return;
       currentLang = lang.code;
       localStorage.setItem('aa-lang', currentLang);
+      document.documentElement.lang = currentLang;
       toggleContainer.querySelectorAll('.lang-btn').forEach(function (b) {
         b.classList.remove('active');
         b.setAttribute('aria-pressed', 'false');
@@ -147,7 +150,7 @@ function loadReflection() {
 }
 
 function updateContent(entry) {
-  ['title', 'monthName', 'day', 'quote', 'reference', 'reflection', 'copyright'].forEach(function (field) {
+  ['title', 'dateName', 'quote', 'reference', 'reflection', 'copyright'].forEach(function (field) {
     const el = document.getElementById(field);
     if (el) el.textContent = entry[field];
   });

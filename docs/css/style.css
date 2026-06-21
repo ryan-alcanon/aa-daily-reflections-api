@@ -140,3 +140,12 @@ article .content {
 figcaption.blockquote-footer {
   padding-top: 0.5rem;
 }
+
+/* French titles are all-caps in the source data — normalize to sentence case */
+[lang="fr"] h1#title {
+  text-transform: lowercase;
+}
+
+[lang="fr"] h1#title::first-letter {
+  text-transform: capitalize;
+}
