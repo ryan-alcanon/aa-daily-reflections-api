@@ -161,20 +161,12 @@ footer p#copyright {
   margin-bottom: 0;
 }
 
-/* Music toggle: lives in the nav flow outside the collapse so it stays visible on mobile.
-   On desktop (≥768px) flex order:10 places it after .navbar-collapse (and the lang buttons
-   inside it). On mobile margin-left:auto hugs it against the toggler at the right edge. */
-@media (min-width: 768px) {
-  #music-toggle {
-    order: 10;
-    margin-left: 0.75rem;
-  }
-}
-@media (max-width: 767.98px) {
-  #music-toggle {
-    margin-left: auto;
-    margin-right: 0.5rem;
-  }
+/* Music toggle sits inside #lang-toggle as the last flex item.
+   margin-left:auto is a no-op on desktop (lang-toggle is content-sized, no free space),
+   but on mobile the open collapse stretches lang-toggle to full width, so the auto margin
+   pushes the button to the right edge of the overflow menu. */
+#music-toggle {
+  margin-left: auto;
 }
 
 /* Abbreviated nav labels — shown when full labels cause wrapping */

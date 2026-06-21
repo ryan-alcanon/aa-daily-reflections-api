@@ -334,35 +334,42 @@ function initMusic() {
       audioPlayer.loop = true;
       audioPlayer.volume = 0.3;
 
-      var btn = document.getElementById('music-toggle');
-      if (btn) btn.style.display = '';
+      // Build and append the toggle button as the last item in #lang-toggle
+      var langToggle = document.getElementById('lang-toggle');
+      var btn = document.createElement('button');
+      btn.id = 'music-toggle';
+      btn.className = 'lang-btn';
+      btn.setAttribute('aria-label', 'Play music');
+      var icon = document.createElement('i');
+      icon.id = 'music-icon';
+      icon.className = 'bi bi-volume-mute';
+      btn.appendChild(icon);
+      if (langToggle) langToggle.appendChild(btn);
 
       // Respect the stored play/pause preference; default to playing.
       var shouldPlay = localStorage.getItem('aa-music-playing') !== 'false';
       if (shouldPlay) {
         audioPlayer.play()
           .then(function () { setMusicPlaying(true); })
-          .catch(function () { setMusicPlaying(false); });
+          .catch(function () { setMusicPlaying(false, false); }); // browser blocked — don't overwrite preference
       } else {
-        setMusicPlaying(false);
+        setMusicPlaying(false, false); // reflecting stored preference — no need to re-save
       }
 
-      if (btn) {
-        btn.addEventListener('click', function () {
-          if (audioPlayer.paused) {
-            audioPlayer.play().then(function () { setMusicPlaying(true); });
-          } else {
-            audioPlayer.pause();
-            setMusicPlaying(false);
-          }
-        });
-      }
+      btn.addEventListener('click', function () {
+        if (audioPlayer.paused) {
+          audioPlayer.play().then(function () { setMusicPlaying(true); });
+        } else {
+          audioPlayer.pause();
+          setMusicPlaying(false);
+        }
+      });
     })
     .catch(function () {});
 }
 
-function setMusicPlaying(playing) {
-  localStorage.setItem('aa-music-playing', playing ? 'true' : 'false');
+function setMusicPlaying(playing, persist) {
+  if (persist !== false) localStorage.setItem('aa-music-playing', playing ? 'true' : 'false');
   var icon = document.getElementById('music-icon');
   var btn  = document.getElementById('music-toggle');
   if (icon) icon.className = 'bi ' + (playing ? 'bi-volume-up' : 'bi-volume-mute');
