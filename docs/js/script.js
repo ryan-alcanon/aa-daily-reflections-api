@@ -187,9 +187,13 @@ function loadLabels() {
       // Must run before pass 2 so that el.textContent = '' never wipes a .label-abbr span
       // that was already appended.
       keys.filter(function (k) { return !k.endsWith('-abbr'); }).forEach(function (key) {
+        var value = labels[key];
+
+        // Keep the browser tab title in sync with the page title label
+        if (key === 'pageTitle') document.title = value;
+
         var el = document.getElementById(key);
         if (!el) return;
-        var value = labels[key];
         if (hasAbbr.has(key)) {
           var fullSpan = el.querySelector('.label-full');
           if (!fullSpan) {
@@ -251,12 +255,27 @@ function setupAdaptiveLabels() {
 
 function checkBrandAbbr() {
   var brand = document.getElementById('pageTitle');
-  if (!brand) return;
-  if (!brand.querySelector('.label-abbr')) {
-    brand.classList.remove('brand-abbreviated');
+  if (!brand || !brand.querySelector('.label-abbr')) {
+    if (brand) brand.classList.remove('brand-abbreviated');
     return;
   }
-  brand.classList.toggle('brand-abbreviated', brand.scrollWidth > brand.clientWidth);
+
+  var nav = brand.closest('nav');
+
+  // Measure in unabbreviated state — forces a synchronous reflow, no visual flash
+  brand.classList.remove('brand-abbreviated');
+  var brandTop = Math.round(brand.getBoundingClientRect().top);
+
+  // Bootstrap uses flex-wrap:wrap on the navbar, so an oversized brand pushes
+  // siblings to a new row rather than overflowing. Detect that row shift.
+  // Exclude the open mobile collapse — it intentionally lives on its own row.
+  var wrapping = Array.from(nav.children).some(function (child) {
+    if (child === brand || child.offsetWidth === 0) return false;
+    if (child.classList.contains('navbar-collapse') && child.classList.contains('show')) return false;
+    return Math.round(child.getBoundingClientRect().top) !== brandTop;
+  });
+
+  brand.classList.toggle('brand-abbreviated', wrapping);
 }
 
 function setupAdaptiveBrand() {
