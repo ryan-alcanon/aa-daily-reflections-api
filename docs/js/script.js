@@ -8,6 +8,7 @@ const LANGUAGES = [
 let currentLang = parseLangParam() || localStorage.getItem('aa-lang') || 'en';
 document.documentElement.lang = currentLang;
 let currentDate = parseDateParam() || new Date();
+let currentSong  = parseSongParam(); // 1-based index into music.json, or null
 let firstLoad = true;
 let pendingAnimEnd = null;
 
@@ -89,6 +90,14 @@ function parseLangParam() {
   return LANGUAGES.some(function (l) { return l.code === lang; }) ? lang : null;
 }
 
+function parseSongParam() {
+  const params = new URLSearchParams(window.location.search);
+  const raw = params.get('song');
+  if (!raw) return null;
+  const n = parseInt(raw, 10);
+  return isNaN(n) || n < 1 ? null : n;
+}
+
 function parseDateParam() {
   const params = new URLSearchParams(window.location.search);
   const raw = params.get('date');
@@ -105,6 +114,7 @@ function updateURL() {
   const params = new URLSearchParams();
   params.set('lang', currentLang);
   params.set('date', toInputValue(currentDate));
+  if (currentSong !== null) params.set('song', String(currentSong));
   history.replaceState(null, '', '?' + params.toString());
 }
 
@@ -303,14 +313,39 @@ function initMusic() {
     .then(function (r) { return r.ok ? r.json() : []; })
     .then(function (files) {
       if (!files || !files.length) return;
-      var src = files[Math.floor(Math.random() * files.length)];
-      audioPlayer = new Audio(src);
+
+      // Song priority: URL param → localStorage → random
+      var idx;
+      var storedSong = parseInt(localStorage.getItem('aa-song'), 10);
+      if (currentSong !== null && currentSong >= 1 && currentSong <= files.length) {
+        idx = currentSong - 1;
+      } else if (!isNaN(storedSong) && storedSong >= 1 && storedSong <= files.length) {
+        idx = storedSong - 1;
+        currentSong = storedSong;
+        updateURL();
+      } else {
+        idx = Math.floor(Math.random() * files.length);
+        currentSong = idx + 1;
+        updateURL();
+      }
+      localStorage.setItem('aa-song', String(currentSong));
+
+      audioPlayer = new Audio(files[idx]);
       audioPlayer.loop = true;
       audioPlayer.volume = 0.3;
 
       var btn = document.getElementById('music-toggle');
       if (btn) btn.style.display = '';
-      setMusicPlaying(false);
+
+      // Respect the stored play/pause preference; default to playing.
+      var shouldPlay = localStorage.getItem('aa-music-playing') !== 'false';
+      if (shouldPlay) {
+        audioPlayer.play()
+          .then(function () { setMusicPlaying(true); })
+          .catch(function () { setMusicPlaying(false); });
+      } else {
+        setMusicPlaying(false);
+      }
 
       if (btn) {
         btn.addEventListener('click', function () {
@@ -327,6 +362,7 @@ function initMusic() {
 }
 
 function setMusicPlaying(playing) {
+  localStorage.setItem('aa-music-playing', playing ? 'true' : 'false');
   var icon = document.getElementById('music-icon');
   var btn  = document.getElementById('music-toggle');
   if (icon) icon.className = 'bi ' + (playing ? 'bi-volume-up' : 'bi-volume-mute');
