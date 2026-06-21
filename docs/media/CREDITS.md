@@ -49,4 +49,3 @@ All music used in this application is royalty-free and sourced from [Pixabay](ht
 * **Track:** [Relaxing Ambient](https://pixabay.com/music/meditationspiritual-ambient-relax-509552/)
 * **Composer / Author:** [leberch](https://pixabay.com/users/leberch-42823964/) (Nikita Kondrashev ~ Batumi/Georgia)
 * **License:** [Pixabay Content License](https://pixabay.com/service/license-summary/)
-
