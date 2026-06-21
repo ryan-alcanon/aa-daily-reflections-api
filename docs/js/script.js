@@ -340,9 +340,9 @@ function initMusic() {
       btn.id = 'music-toggle';
       btn.className = 'lang-btn';
       btn.setAttribute('aria-label', 'Play music');
-      var icon = document.createElement('i');
+      var icon = document.createElement('span');
       icon.id = 'music-icon';
-      icon.className = 'bi bi-volume-mute';
+      icon.setAttribute('aria-hidden', 'true');
       btn.appendChild(icon);
       if (langToggle) langToggle.appendChild(btn);
 
@@ -351,7 +351,12 @@ function initMusic() {
       if (shouldPlay) {
         audioPlayer.play()
           .then(function () { setMusicPlaying(true); })
-          .catch(function () { setMusicPlaying(false, false); }); // browser blocked — don't overwrite preference
+          .catch(function () {
+            // Browser blocked autoplay — don't overwrite the preference.
+            // Resume on the first user interaction instead.
+            setMusicPlaying(false, false);
+            resumeOnInteraction();
+          });
       } else {
         setMusicPlaying(false, false); // reflecting stored preference — no need to re-save
       }
@@ -368,11 +373,22 @@ function initMusic() {
     .catch(function () {});
 }
 
+function resumeOnInteraction() {
+  var events = ['click', 'keydown', 'touchstart'];
+  function handler() {
+    events.forEach(function (e) { document.removeEventListener(e, handler); });
+    if (!audioPlayer || !audioPlayer.paused) return;
+    if (localStorage.getItem('aa-music-playing') === 'false') return;
+    audioPlayer.play().then(function () { setMusicPlaying(true); }).catch(function () {});
+  }
+  events.forEach(function (e) { document.addEventListener(e, handler); });
+}
+
 function setMusicPlaying(playing, persist) {
   if (persist !== false) localStorage.setItem('aa-music-playing', playing ? 'true' : 'false');
   var icon = document.getElementById('music-icon');
   var btn  = document.getElementById('music-toggle');
-  if (icon) icon.className = 'bi ' + (playing ? 'bi-volume-up' : 'bi-volume-mute');
+  if (icon) icon.classList.toggle('music-playing', playing);
   if (btn) {
     btn.setAttribute('aria-label', playing ? 'Pause music' : 'Play music');
     btn.classList.toggle('active', playing);
