@@ -119,6 +119,16 @@ article.animate__fadeOut {
   border-bottom-color: var(--bs-emphasis-color);
 }
 
+/* Mute Toggle */
+button#music-toggle {
+    color: var(--bs-secondary-color);
+    border-bottom: none;
+}
+
+button#music-toggle :hover {
+    color: var(--bs-emphasis-color)
+}
+
 /*
   * Footer
   */
