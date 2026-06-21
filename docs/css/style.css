@@ -120,13 +120,18 @@ article.animate__fadeOut {
 }
 
 /* Mute Toggle */
-button#music-toggle {
+button#music-toggle, button#music-toggle:focus, button#music-toggle:active {
     color: var(--bs-secondary-color);
     border-bottom: none;
 }
 
 button#music-toggle :hover {
-    color: var(--bs-emphasis-color)
+    color: var(--bs-emphasis-color);
+    border-bottom: none;
+}
+
+button#music-toggle i.bi {
+  vertical-align: 0;
 }
 
 /*
