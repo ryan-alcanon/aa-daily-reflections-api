@@ -329,7 +329,7 @@ function initMusic() {
 function setMusicPlaying(playing) {
   var icon = document.getElementById('music-icon');
   var btn  = document.getElementById('music-toggle');
-  if (icon) icon.className = 'bi ' + (playing ? 'bi-volume-up-fill' : 'bi-volume-mute-fill');
+  if (icon) icon.className = 'bi ' + (playing ? 'bi-volume-up' : 'bi-volume-mute');
   if (btn) {
     btn.setAttribute('aria-label', playing ? 'Pause music' : 'Play music');
     btn.classList.toggle('active', playing);
