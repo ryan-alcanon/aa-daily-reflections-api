@@ -131,7 +131,7 @@ button#music-toggle :hover {
 }
 
 button#music-toggle i.bi {
-  vertical-align: 0;
+    vertical-align: 5px;
 }
 
 /*
