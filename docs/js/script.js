@@ -362,9 +362,16 @@ function initMusic() {
       // Autoplay unless the user has explicitly paused.
       var userPaused = localStorage.getItem('aa-music-paused') === 'true';
       if (!userPaused) {
+        audioPlayer.muted = true;
         audioPlayer.play()
-          .then(function () { setMusicPlaying(true); })
-          .catch(function () { setMusicPlaying(false, false); });
+          .then(function () {
+            audioPlayer.muted = false;
+            setMusicPlaying(true);
+          })
+          .catch(function () {
+            audioPlayer.muted = false;
+            setMusicPlaying(false, false);
+          });
       } else {
         setMusicPlaying(false, false);
       }
