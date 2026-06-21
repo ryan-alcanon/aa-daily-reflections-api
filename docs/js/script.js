@@ -364,12 +364,7 @@ function initMusic() {
       if (!userPaused) {
         audioPlayer.play()
           .then(function () { setMusicPlaying(true); })
-          .catch(function () {
-            // Browser blocked autoplay — don't record this as a user pause.
-            // Resume on the first user interaction instead.
-            setMusicPlaying(false, false);
-            resumeOnInteraction();
-          });
+          .catch(function () { setMusicPlaying(false, false); });
       } else {
         setMusicPlaying(false, false);
       }
@@ -386,16 +381,6 @@ function initMusic() {
     .catch(function () {});
 }
 
-function resumeOnInteraction() {
-  var events = ['click', 'keydown', 'touchstart'];
-  function handler() {
-    events.forEach(function (e) { document.removeEventListener(e, handler); });
-    if (!audioPlayer || !audioPlayer.paused) return;
-    if (localStorage.getItem('aa-music-paused') === 'true') return;
-    audioPlayer.play().then(function () { setMusicPlaying(true); }).catch(function () {});
-  }
-  events.forEach(function (e) { document.addEventListener(e, handler); });
-}
 
 function setMusicPlaying(playing, persist) {
   if (persist !== false) {
