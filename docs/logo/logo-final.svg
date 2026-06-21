@@ -18,9 +18,9 @@
      inkscape:pageopacity="0"
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
-     inkscape:zoom="1.6113281"
-     inkscape:cx="255.6897"
-     inkscape:cy="256"
+     inkscape:zoom="0.80566405"
+     inkscape:cx="38.477576"
+     inkscape:cy="303.47637"
      inkscape:window-width="1920"
      inkscape:window-height="1027"
      inkscape:window-x="-8"
@@ -53,12 +53,12 @@
        r="280"
        gradientUnits="userSpaceOnUse">
       <stop
-         offset="0%"
+         offset="0.25496688"
          stop-color="#F5A020"
          stop-opacity="0.55"
          id="stop3" />
       <stop
-         offset="100%"
+         offset="0.86754966"
          stop-color="#F5A020"
          stop-opacity="0"
          id="stop4" />
@@ -71,17 +71,20 @@
        r="100"
        gradientUnits="userSpaceOnUse">
       <stop
-         offset="0%"
+         offset="0"
          stop-color="#FFFDE0"
-         id="stop5" />
+         id="stop5"
+         style="stop-color:#f6fbd5;stop-opacity:1;" />
       <stop
-         offset="45%"
+         offset="0.44999999"
          stop-color="#F5A825"
-         id="stop6" />
+         id="stop6"
+         style="stop-color:#ff9425;stop-opacity:1;" />
       <stop
-         offset="100%"
+         offset="1"
          stop-color="#B86000"
-         id="stop7" />
+         id="stop7"
+         style="stop-color:#f16000;stop-opacity:1;" />
     </radialGradient>
     <!-- Only render sun + rays above the book horizon -->
     <clipPath
@@ -93,6 +96,56 @@
          height="284"
          id="rect7" />
     </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath1">
+      <rect
+         x="0"
+         y="0"
+         width="512"
+         height="284"
+         id="rect2" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2">
+      <rect
+         x="0"
+         y="0"
+         width="512"
+         height="284"
+         id="rect3" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3">
+      <rect
+         x="0"
+         y="0"
+         width="512"
+         height="284"
+         id="rect4" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath4">
+      <rect
+         x="0"
+         y="0"
+         width="512"
+         height="284"
+         id="rect5" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath5">
+      <rect
+         x="0"
+         y="0"
+         width="512"
+         height="284"
+         id="rect6" />
+    </clipPath>
   </defs>
   <!-- Background -->
   <rect
@@ -102,7 +155,7 @@
      ry="112"
      fill="url(#bg)"
      id="rect8"
-     style="fill:#2a2aff" />
+     style="fill:#6528e0;fill-opacity:0.99999934" />
   <!-- Subtle inner edge for depth -->
   <rect
      width="512"
@@ -122,52 +175,56 @@
      fill="url(#glow)"
      id="ellipse9" />
   <!-- Rays fanning upward, clipped at horizon -->
-  <g
-     clip-path="url(#aboveHorizon)"
-     stroke="#F5C535"
-     stroke-linecap="round"
-     id="g13">
-    <line
-       x1="256"
-       y1="284"
-       x2="256"
-       y2="114"
-       stroke-width="14"
-       opacity="0.65"
-       id="line9" />
-    <line
-       x1="256"
-       y1="284"
-       x2="362"
-       y2="162"
-       stroke-width="11"
-       opacity="0.50"
-       id="line10" />
-    <line
-       x1="256"
-       y1="284"
-       x2="150"
-       y2="162"
-       stroke-width="11"
-       opacity="0.50"
-       id="line11" />
-    <line
-       x1="256"
-       y1="284"
-       x2="414"
-       y2="226"
-       stroke-width="9"
-       opacity="0.35"
-       id="line12" />
-    <line
-       x1="256"
-       y1="284"
-       x2="98"
-       y2="226"
-       stroke-width="9"
-       opacity="0.35"
-       id="line13" />
-  </g>
+  <line
+     x1="256"
+     y1="284"
+     x2="256"
+     y2="114"
+     stroke-width="14"
+     opacity="0.65"
+     id="line9"
+     style="stroke:#f5c535;stroke-linecap:round"
+     clip-path="url(#clipPath5)" />
+  <line
+     x1="256"
+     y1="284"
+     x2="362"
+     y2="162"
+     stroke-width="11"
+     opacity="0.5"
+     id="line10"
+     style="stroke:#f5c535;stroke-linecap:round"
+     clip-path="url(#clipPath4)" />
+  <line
+     x1="256"
+     y1="284"
+     x2="150"
+     y2="162"
+     stroke-width="11"
+     opacity="0.5"
+     id="line11"
+     style="stroke:#f5c535;stroke-linecap:round"
+     clip-path="url(#clipPath3)" />
+  <line
+     x1="256"
+     y1="284"
+     x2="414"
+     y2="226"
+     stroke-width="9"
+     opacity="0.35"
+     id="line12"
+     style="stroke:#f5c535;stroke-linecap:round"
+     clip-path="url(#clipPath2)" />
+  <line
+     x1="256"
+     y1="284"
+     x2="98"
+     y2="226"
+     stroke-width="9"
+     opacity="0.35"
+     id="line13"
+     style="stroke:#f5c535;stroke-linecap:round"
+     clip-path="url(#clipPath1)" />
   <!-- Rising sun: top semicircle only -->
   <circle
      cx="256"
@@ -177,25 +234,28 @@
      clip-path="url(#aboveHorizon)"
      id="circle13" />
   <!-- Open book — left page -->
-  <path
-     d="M 256 412 L 62 374 L 62 232 Q 158 260 256 284 Z"
-     fill="#E2EFF7"
-     opacity="0.95"
-     id="path13" />
   <!-- Open book — right page -->
-  <path
-     d="M 256 412 L 450 374 L 450 232 Q 354 260 256 284 Z"
-     fill="#C8DCE8"
-     opacity="0.95"
-     id="path14" />
   <!-- Spine -->
-  <line
-     x1="256"
-     y1="284"
-     x2="256"
-     y2="412"
-     stroke="#5C86A8"
-     stroke-width="4"
-     opacity="0.55"
-     id="line14" />
+  <g
+     id="g1">
+    <path
+       d="M 256 412 L 62 374 L 62 232 Q 158 260 256 284 Z"
+       fill="#E2EFF7"
+       opacity="0.95"
+       id="path13" />
+    <path
+       d="M 256 412 L 450 374 L 450 232 Q 354 260 256 284 Z"
+       fill="#C8DCE8"
+       opacity="0.95"
+       id="path14" />
+    <line
+       x1="256"
+       y1="284"
+       x2="256"
+       y2="412"
+       stroke="#5C86A8"
+       stroke-width="4"
+       opacity="0.55"
+       id="line14" />
+  </g>
 </svg>

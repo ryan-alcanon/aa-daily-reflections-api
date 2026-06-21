@@ -149,6 +149,7 @@ function loadReflection() {
         firstLoad = false;
         updateContent(entry);
         fadeArticleIn('animate__fadeIn');
+        initMusic();
       } else {
         fadeArticleOut(function () {
           updateContent(entry);
@@ -188,10 +189,6 @@ function loadLabels() {
       // that was already appended.
       keys.filter(function (k) { return !k.endsWith('-abbr'); }).forEach(function (key) {
         var value = labels[key];
-
-        // Keep the browser tab title in sync with the page title label
-        if (key === 'pageTitle') document.title = value;
-
         var el = document.getElementById(key);
         if (!el) return;
         if (hasAbbr.has(key)) {
@@ -259,29 +256,84 @@ function checkBrandAbbr() {
     if (brand) brand.classList.remove('brand-abbreviated');
     return;
   }
+  var fullSpan = brand.querySelector('.label-full');
+  if (!fullSpan) { brand.classList.remove('brand-abbreviated'); return; }
 
   var nav = brand.closest('nav');
 
-  // Measure in unabbreviated state — forces a synchronous reflow, no visual flash
-  brand.classList.remove('brand-abbreviated');
-  var brandTop = Math.round(brand.getBoundingClientRect().top);
+  // Measure full text width using a fixed-position probe so we never mutate
+  // the nav's layout inside the ResizeObserver callback — that would retrigger
+  // the observer and cause an oscillation loop.
+  var probe = document.createElement('span');
+  probe.style.cssText = 'position:fixed;top:-9999px;white-space:nowrap;visibility:hidden;pointer-events:none';
+  probe.style.font = getComputedStyle(brand).font;
+  probe.textContent = fullSpan.textContent;
+  document.body.appendChild(probe);
+  var fullTextWidth = probe.getBoundingClientRect().width;
+  document.body.removeChild(probe);
 
-  // Bootstrap uses flex-wrap:wrap on the navbar, so an oversized brand pushes
-  // siblings to a new row rather than overflowing. Detect that row shift.
-  // Exclude the open mobile collapse — it intentionally lives on its own row.
-  var wrapping = Array.from(nav.children).some(function (child) {
-    if (child === brand || child.offsetWidth === 0) return false;
-    if (child.classList.contains('navbar-collapse') && child.classList.contains('show')) return false;
-    return Math.round(child.getBoundingClientRect().top) !== brandTop;
+  // Available width = nav width minus the footprint of visible siblings.
+  // The .navbar-collapse on desktop is flex-grown to fill remaining space so
+  // its offsetWidth is circular — use its actual content (#lang-toggle) instead.
+  var siblingWidth = 0;
+  Array.from(nav.children).forEach(function (child) {
+    if (child === brand || child.offsetWidth === 0) return;
+    if (child.classList.contains('navbar-collapse') && child.classList.contains('show')) return;
+    if (child.classList.contains('navbar-collapse')) {
+      var langToggle = child.querySelector('#lang-toggle');
+      siblingWidth += langToggle ? langToggle.getBoundingClientRect().width : 0;
+    } else {
+      siblingWidth += child.getBoundingClientRect().width;
+    }
   });
 
-  brand.classList.toggle('brand-abbreviated', wrapping);
+  brand.classList.toggle('brand-abbreviated', fullTextWidth > nav.clientWidth - siblingWidth);
 }
 
 function setupAdaptiveBrand() {
   var navbar = document.querySelector('nav.navbar');
   if (!navbar) return;
   new ResizeObserver(checkBrandAbbr).observe(navbar);
+}
+
+var audioPlayer = null;
+
+function initMusic() {
+  fetch('data/music.json')
+    .then(function (r) { return r.ok ? r.json() : []; })
+    .then(function (files) {
+      if (!files || !files.length) return;
+      var src = files[Math.floor(Math.random() * files.length)];
+      audioPlayer = new Audio(src);
+      audioPlayer.loop = true;
+      audioPlayer.volume = 0.3;
+
+      var btn = document.getElementById('music-toggle');
+      if (btn) btn.style.display = '';
+
+      audioPlayer.play()
+        .then(function () { setMusicPlaying(true); })
+        .catch(function () { setMusicPlaying(false); });
+
+      if (btn) {
+        btn.addEventListener('click', function () {
+          if (audioPlayer.paused) {
+            audioPlayer.play().then(function () { setMusicPlaying(true); });
+          } else {
+            audioPlayer.pause();
+            setMusicPlaying(false);
+          }
+        });
+      }
+    })
+    .catch(function () {});
+}
+
+function setMusicPlaying(playing) {
+  var icon = document.getElementById('music-icon');
+  var btn  = document.getElementById('music-toggle');
+  if (icon) icon.className = 'bi my-1 ' + (playing ? 'bi-volume-up-fill' : 'bi-volume-mute-fill');
+  if (btn)  btn.setAttribute('aria-label', playing ? 'Pause music' : 'Play music');
 }
 
 function fadeArticleOut(callback) {
