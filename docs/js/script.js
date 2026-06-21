@@ -80,13 +80,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
   setupAdaptiveLabels();
   setupAdaptiveBrand();
-  updateURL();
   loadLabels();
   loadReflection();
 
   window.addEventListener('popstate', function () {
-    var d = parseDateParam();
-    if (!d) return;
+    var d = parseDateParam() || new Date();
     currentDate = d;
     document.getElementById('date-picker').value = toInputValue(d);
     loadReflection();
