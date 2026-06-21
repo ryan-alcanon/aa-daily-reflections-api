@@ -5,7 +5,7 @@ const LANGUAGES = [
   { code: 'ja', label: 'JA' },
 ];
 
-let currentLang = localStorage.getItem('aa-lang') || 'en';
+let currentLang = parseLangParam() || localStorage.getItem('aa-lang') || 'en';
 document.documentElement.lang = currentLang;
 let currentDate = parseDateParam() || new Date();
 let firstLoad = true;
@@ -24,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function () {
       currentLang = lang.code;
       localStorage.setItem('aa-lang', currentLang);
       document.documentElement.lang = currentLang;
+      updateURL();
+      loadLabels();
       toggleContainer.querySelectorAll('.lang-btn').forEach(function (b) {
         b.classList.remove('active');
         b.setAttribute('aria-pressed', 'false');
@@ -74,9 +76,16 @@ document.addEventListener('DOMContentLoaded', function () {
     setCurrentDate(new Date(currentDate.getFullYear(), 0, dayOfYear));
   });
 
-  updateURL(currentDate);
+  updateURL();
+  loadLabels();
   loadReflection();
 });
+
+function parseLangParam() {
+  const params = new URLSearchParams(window.location.search);
+  const lang = params.get('lang');
+  return LANGUAGES.some(function (l) { return l.code === lang; }) ? lang : null;
+}
 
 function parseDateParam() {
   const params = new URLSearchParams(window.location.search);
@@ -90,16 +99,17 @@ function parseDateParam() {
   return date;
 }
 
-function updateURL(date) {
-  const params = new URLSearchParams(window.location.search);
-  params.set('date', toInputValue(date));
+function updateURL() {
+  const params = new URLSearchParams();
+  params.set('lang', currentLang);
+  params.set('date', toInputValue(currentDate));
   history.replaceState(null, '', '?' + params.toString());
 }
 
 function setCurrentDate(date) {
   currentDate = date;
   document.getElementById('date-picker').value = toInputValue(date);
-  updateURL(date);
+  updateURL();
   loadReflection();
 }
 
@@ -154,6 +164,20 @@ function updateContent(entry) {
     const el = document.getElementById(field);
     if (el) el.textContent = entry[field];
   });
+}
+
+function loadLabels() {
+  fetch('data/labels-' + currentLang + '.json')
+    .then(function (r) {
+      return r.ok ? r.json() : fetch('data/labels-en.json').then(function (r2) { return r2.json(); });
+    })
+    .then(function (labels) {
+      Object.entries(labels).forEach(function (entry) {
+        var el = document.getElementById(entry[0]);
+        if (el) el.textContent = entry[1];
+      });
+    })
+    .catch(function (err) { console.error('Error loading labels:', err.message); });
 }
 
 function fadeArticleOut(callback) {
