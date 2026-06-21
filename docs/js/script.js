@@ -310,10 +310,7 @@ function initMusic() {
 
       var btn = document.getElementById('music-toggle');
       if (btn) btn.style.display = '';
-
-      audioPlayer.play()
-        .then(function () { setMusicPlaying(true); })
-        .catch(function () { setMusicPlaying(false); });
+      setMusicPlaying(false);
 
       if (btn) {
         btn.addEventListener('click', function () {
@@ -332,8 +329,11 @@ function initMusic() {
 function setMusicPlaying(playing) {
   var icon = document.getElementById('music-icon');
   var btn  = document.getElementById('music-toggle');
-  if (icon) icon.className = 'bi my-1 ' + (playing ? 'bi-volume-up-fill' : 'bi-volume-mute-fill');
-  if (btn)  btn.setAttribute('aria-label', playing ? 'Pause music' : 'Play music');
+  if (icon) icon.className = 'bi ' + (playing ? 'bi-volume-up-fill' : 'bi-volume-mute-fill');
+  if (btn) {
+    btn.setAttribute('aria-label', playing ? 'Pause music' : 'Play music');
+    btn.classList.toggle('active', playing);
+  }
 }
 
 function fadeArticleOut(callback) {

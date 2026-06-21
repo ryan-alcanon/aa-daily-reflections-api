@@ -146,6 +146,22 @@ footer p#copyright {
   margin-bottom: 0;
 }
 
+/* Music toggle: lives in the nav flow outside the collapse so it stays visible on mobile.
+   On desktop (≥768px) flex order:10 places it after .navbar-collapse (and the lang buttons
+   inside it). On mobile margin-left:auto hugs it against the toggler at the right edge. */
+@media (min-width: 768px) {
+  #music-toggle {
+    order: 10;
+    margin-left: 0.75rem;
+  }
+}
+@media (max-width: 767.98px) {
+  #music-toggle {
+    margin-left: auto;
+    margin-right: 0.5rem;
+  }
+}
+
 /* Abbreviated nav labels — shown when full labels cause wrapping */
 .label-abbr { display: none; }
 .labels-abbreviated .label-full { display: none; }
