@@ -2,6 +2,17 @@
  * Globals
  */
 
+/*
+ * Dark mode toggle — visible on load, fades out after 2s of inactivity
+ */
+.bd-mode-toggle {
+  transition: opacity 0.5s ease;
+}
+.bd-mode-toggle.faded {
+  opacity: 0;
+  pointer-events: none;
+}
+
 /* Custom default button */
 .btn-light,
 .btn-light:hover,

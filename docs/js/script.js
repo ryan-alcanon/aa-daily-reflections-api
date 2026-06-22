@@ -83,6 +83,31 @@ document.addEventListener('DOMContentLoaded', function () {
   loadLabels();
   loadReflection();
 
+  // Dark mode toggle: visible on load, fades out after 2s, reappears on user input
+  var modeToggle = document.querySelector('.bd-mode-toggle');
+  var fadeTimer = null;
+  function scheduleModeToggleFade() {
+    clearTimeout(fadeTimer);
+    fadeTimer = setTimeout(function () {
+      var themeBtn = document.getElementById('bd-theme');
+      if (themeBtn && themeBtn.getAttribute('aria-expanded') === 'true') {
+        scheduleModeToggleFade();
+        return;
+      }
+      if (modeToggle) modeToggle.classList.add('faded');
+    }, 2000);
+  }
+  function showModeToggle() {
+    if (modeToggle) modeToggle.classList.remove('faded');
+    scheduleModeToggleFade();
+  }
+  if (modeToggle) {
+    scheduleModeToggleFade();
+    ['mousemove', 'mousedown', 'touchstart', 'keydown'].forEach(function (evt) {
+      document.addEventListener(evt, showModeToggle, { passive: true });
+    });
+  }
+
   window.addEventListener('popstate', function () {
     var d = parseDateParam() || new Date();
     currentDate = d;
