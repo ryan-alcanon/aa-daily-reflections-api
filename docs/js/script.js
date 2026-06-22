@@ -377,27 +377,6 @@ function initMusic() {
           setMusicPlaying(false);
         }
       });
-
-      // Share button — locks the current date+song into the URL for bookmarking
-      var shareBtn = document.createElement('button');
-      shareBtn.id = 'share-toggle';
-      shareBtn.className = 'lang-btn';
-      shareBtn.setAttribute('aria-label', 'Copy bookmark link');
-      shareBtn.innerHTML = '<i class="bi bi-link-45deg" aria-hidden="true"></i>';
-      if (langToggle) langToggle.appendChild(shareBtn);
-
-      shareBtn.addEventListener('click', function () {
-        songInURL = currentSong;
-        updateURL();
-        if (navigator.clipboard) {
-          navigator.clipboard.writeText(location.href).then(function () {
-            shareBtn.innerHTML = '<i class="bi bi-check-lg" aria-hidden="true"></i>';
-            setTimeout(function () {
-              shareBtn.innerHTML = '<i class="bi bi-link-45deg" aria-hidden="true"></i>';
-            }, 1500);
-          }).catch(function () {});
-        }
-      });
     })
     .catch(function () {});
 }
