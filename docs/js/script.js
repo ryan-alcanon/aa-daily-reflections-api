@@ -12,6 +12,7 @@ let songInURL = parseSongParam();   // non-null only when ?song= was in the URL 
 let currentSong = songInURL;        // 1-based index of the currently playing song
 let firstLoad = true;
 let pendingAnimEnd = null;
+let navDirection = null; // 'next' | 'prev' | null
 
 document.addEventListener('DOMContentLoaded', function () {
   // Language toggle
@@ -64,10 +65,12 @@ document.addEventListener('DOMContentLoaded', function () {
   // Prev / Next
   document.getElementById('prev-link').addEventListener('click', function (e) {
     e.preventDefault();
+    navDirection = 'prev';
     setCurrentDate(offsetDate(currentDate, -1));
   });
   document.getElementById('next-link').addEventListener('click', function (e) {
     e.preventDefault();
+    navDirection = 'next';
     setCurrentDate(offsetDate(currentDate, 1));
   });
 
@@ -111,8 +114,8 @@ document.addEventListener('DOMContentLoaded', function () {
   // Keyboard navigation: left/right arrow keys
   document.addEventListener('keydown', function (e) {
     if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
-    if (e.key === 'ArrowLeft') setCurrentDate(offsetDate(currentDate, -1));
-    else if (e.key === 'ArrowRight') setCurrentDate(offsetDate(currentDate, 1));
+    if (e.key === 'ArrowLeft') { navDirection = 'prev'; setCurrentDate(offsetDate(currentDate, -1)); }
+    else if (e.key === 'ArrowRight') { navDirection = 'next'; setCurrentDate(offsetDate(currentDate, 1)); }
   });
 
   // Touch swipe navigation
@@ -125,6 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var dx = e.changedTouches[0].clientX - touchStartX;
     touchStartX = null;
     if (Math.abs(dx) < 50) return;
+    navDirection = dx < 0 ? 'next' : 'prev';
     setCurrentDate(offsetDate(currentDate, dx < 0 ? 1 : -1));
   }, { passive: true });
 
@@ -200,6 +204,15 @@ function toInputValue(date) {
 function loadReflection() {
   const month = currentDate.getMonth() + 1;
   const day = currentDate.getDate();
+  const direction = navDirection;
+  navDirection = null;
+
+  const outClass = direction === 'next' ? 'animate__fadeOutLeft'
+                 : direction === 'prev' ? 'animate__fadeOutRight'
+                 : 'animate__fadeOut';
+  const inClass  = direction === 'next' ? 'animate__fadeInRight'
+                 : direction === 'prev' ? 'animate__fadeInLeft'
+                 : 'animate__fadeIn';
 
   fetch('data/reflections-' + currentLang + '.json')
     .then(function (response) {
@@ -218,9 +231,9 @@ function loadReflection() {
         fadeArticleIn('animate__fadeIn');
         initMusic();
       } else {
-        fadeArticleOut(function () {
+        fadeArticleOut(outClass, function () {
           updateContent(entry);
-          fadeArticleIn('animate__fadeIn');
+          fadeArticleIn(inClass);
         });
       }
     })
@@ -455,7 +468,7 @@ function setMusicPlaying(playing, persist) {
 }
 
 
-function fadeArticleOut(callback) {
+function fadeArticleOut(outClass, callback) {
   const article = document.querySelector('article');
 
   // Cancel any in-progress animation before starting a new one
@@ -464,14 +477,16 @@ function fadeArticleOut(callback) {
     pendingAnimEnd = null;
   }
 
-  article.classList.remove('animate__fadeIn', 'animate__fadeInDown');
+  article.classList.remove(
+    'animate__fadeIn', 'animate__fadeInDown', 'animate__fadeInLeft', 'animate__fadeInRight'
+  );
   void article.offsetWidth; // force reflow so the new animation starts clean
-  article.classList.add('animate__fadeOut');
+  article.classList.add(outClass);
 
   pendingAnimEnd = function () {
     article.removeEventListener('animationend', pendingAnimEnd);
     pendingAnimEnd = null;
-    article.classList.remove('animate__fadeOut');
+    article.classList.remove(outClass);
     callback();
   };
   article.addEventListener('animationend', pendingAnimEnd);
