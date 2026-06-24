@@ -69,7 +69,9 @@ article {
   --animate-duration: 0.5s;
 }
 
-article.animate__fadeOut {
+article.animate__fadeOut,
+article.animate__fadeOutLeft,
+article.animate__fadeOutRight {
   --animate-duration: 0.2s;
 }
 

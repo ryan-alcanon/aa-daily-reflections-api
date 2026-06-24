@@ -98,7 +98,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
       if (modeToggle) modeToggle.classList.add('faded');
-    }, 2000);
+    }, 1500);
   }
   function showModeToggle() {
     if (modeToggle) modeToggle.classList.remove('faded');
