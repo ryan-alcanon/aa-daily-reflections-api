@@ -108,6 +108,26 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Keyboard navigation: left/right arrow keys
+  document.addEventListener('keydown', function (e) {
+    if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+    if (e.key === 'ArrowLeft') setCurrentDate(offsetDate(currentDate, -1));
+    else if (e.key === 'ArrowRight') setCurrentDate(offsetDate(currentDate, 1));
+  });
+
+  // Touch swipe navigation
+  var touchStartX = null;
+  document.addEventListener('touchstart', function (e) {
+    touchStartX = e.touches[0].clientX;
+  }, { passive: true });
+  document.addEventListener('touchend', function (e) {
+    if (touchStartX === null) return;
+    var dx = e.changedTouches[0].clientX - touchStartX;
+    touchStartX = null;
+    if (Math.abs(dx) < 50) return;
+    setCurrentDate(offsetDate(currentDate, dx < 0 ? 1 : -1));
+  }, { passive: true });
+
   window.addEventListener('popstate', function () {
     var d = parseDateParam() || new Date();
     currentDate = d;
@@ -433,6 +453,7 @@ function setMusicPlaying(playing, persist) {
     btn.classList.toggle('active', playing);
   }
 }
+
 
 function fadeArticleOut(callback) {
   const article = document.querySelector('article');
