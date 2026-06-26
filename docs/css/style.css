@@ -26,21 +26,8 @@
  * Base structure
  */
 
-/* Allow html/body/.cover-container to grow with content so the vignette
-   follows the content bottom rather than staying fixed to the viewport. */
-html {
-  height: auto !important;
-  min-height: 100vh;
-}
-
 body {
-  height: auto !important;
-  min-height: 100%;
-}
-
-.cover-container {
-  height: auto !important;
-  min-height: 100%;
+  min-height: 100vh;
 }
 
 [data-bs-theme="dark"] body {
