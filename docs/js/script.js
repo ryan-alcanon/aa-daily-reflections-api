@@ -1,8 +1,11 @@
 const LANGUAGES = [
   { code: 'en', label: 'EN' },
+  { code: 'de', label: 'DE' },
   { code: 'es', label: 'ES' },
   { code: 'fr', label: 'FR' },
   { code: 'ja', label: 'JA' },
+  { code: 'pt-br', label: 'PT-BR' },
+  { code: 'ru', label: 'RU' },
 ];
 
 let currentLang = parseLangParam() || localStorage.getItem('aa-lang') || 'en';
