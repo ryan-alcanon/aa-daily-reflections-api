@@ -413,7 +413,10 @@ function initMusic() {
       icon.id = 'music-icon';
       icon.setAttribute('aria-hidden', 'true');
       btn.appendChild(icon);
-      if (langToggle) langToggle.appendChild(btn);
+      if (langToggle) {
+        langToggle.appendChild(btn);
+        checkBrandAbbr(); // music button widens #lang-toggle; re-check brand fit
+      }
 
       // Autoplay unless the user has explicitly paused.
       var userPaused = localStorage.getItem('aa-music-paused') === 'true';
