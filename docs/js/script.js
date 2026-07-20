@@ -234,10 +234,11 @@ function loadReflection() {
         fadeArticleIn('animate__fadeIn');
         initMusic();
       } else {
+        const footerDirection = willFooterPositionChange(entry);
         fadeArticleOut(outClass, function () {
           updateContent(entry);
-          fadeArticleIn(inClass);
-        });
+          fadeArticleIn(inClass, footerDirection);
+        }, footerDirection);
       }
     })
     .catch(function (err) {
@@ -250,6 +251,34 @@ function updateContent(entry) {
     const el = document.getElementById(field);
     if (el) el.textContent = entry[field];
   });
+}
+
+// The footer sits outside <article>, so it only jerks up/down when the new
+// content's height differs from the current content's. Detect that ahead of
+// time (applying then reverting the new text is synchronous, so nothing is
+// painted in between) so we only animate the footer when it's actually needed,
+// and in which direction ('up' or 'down') it will move — or null if it won't.
+function willFooterPositionChange(entry) {
+  const footer = document.querySelector('footer');
+  const beforeTop = Math.round(footer.getBoundingClientRect().top);
+
+  const fields = ['title', 'dateName', 'quote', 'reference', 'reflection', 'copyright'];
+  const saved = {};
+  fields.forEach(function (field) {
+    const el = document.getElementById(field);
+    saved[field] = el ? el.textContent : null;
+  });
+
+  updateContent(entry);
+  const afterTop = Math.round(footer.getBoundingClientRect().top);
+
+  fields.forEach(function (field) {
+    const el = document.getElementById(field);
+    if (el && saved[field] !== null) el.textContent = saved[field];
+  });
+
+  if (afterTop === beforeTop) return null;
+  return afterTop > beforeTop ? 'down' : 'up';
 }
 
 function loadLabels() {
@@ -474,8 +503,9 @@ function setMusicPlaying(playing, persist) {
 }
 
 
-function fadeArticleOut(outClass, callback) {
+function fadeArticleOut(outClass, callback, footerDirection) {
   const article = document.querySelector('article');
+  const footer = footerDirection ? document.querySelector('footer') : null;
 
   // Cancel any in-progress animation before starting a new one
   if (pendingAnimEnd) {
@@ -489,18 +519,37 @@ function fadeArticleOut(outClass, callback) {
   void article.offsetWidth; // force reflow so the new animation starts clean
   article.classList.add(outClass);
 
+  // The footer only ever moves vertically (its horizontal position never
+  // changes), so it fades up/down in the direction it's actually moving
+  // rather than reusing the article's left/right nav-direction classes.
+  var footerOutClass;
+  if (footer) {
+    footerOutClass = footerDirection === 'down' ? 'animate__fadeOutDown' : 'animate__fadeOutUp';
+    footer.classList.remove('animate__fadeInDown', 'animate__fadeInUp');
+    footer.classList.add('animate__animated', footerOutClass);
+  }
+
   pendingAnimEnd = function () {
     article.removeEventListener('animationend', pendingAnimEnd);
     pendingAnimEnd = null;
     article.classList.remove(outClass);
+    if (footer) footer.classList.remove(footerOutClass);
     callback();
   };
   article.addEventListener('animationend', pendingAnimEnd);
 }
 
-function fadeArticleIn(animClass) {
+function fadeArticleIn(animClass, footerDirection) {
   const article = document.querySelector('article');
   article.classList.remove('animate__fadeOut');
   void article.offsetWidth; // force reflow so animation restarts if same class
   article.classList.add(animClass);
+
+  if (footerDirection) {
+    const footer = document.querySelector('footer');
+    const footerInClass = footerDirection === 'down' ? 'animate__fadeInDown' : 'animate__fadeInUp';
+    footer.classList.remove('animate__fadeOutDown', 'animate__fadeOutUp');
+    void footer.offsetWidth;
+    footer.classList.add('animate__animated', footerInClass);
+  }
 }
